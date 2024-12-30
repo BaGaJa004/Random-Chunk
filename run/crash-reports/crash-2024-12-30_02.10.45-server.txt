@@ -1,0 +1,147 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2024-12-30 02:10:45
+Description: Ticking player
+
+java.lang.ClassCastException: class net.minecraftforge.registries.ForgeRegistry cannot be cast to class java.util.Collection (net.minecraftforge.registries.ForgeRegistry is in module forge@49.1.21 of loader 'TRANSFORMER' @461c3709; java.util.Collection is in module java.base of loader 'bootstrap')
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerChangedDimension(ChunkTransformerMod.java:57) ~[main/:?] {re:classloading}
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerChangedDimension_PlayerChangedDimensionEvent.invoke(.dynamic) ~[main/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?] {}
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?] {re:classloading}
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerChangedDimension(ForgeEventFactory.java:686) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerPlayer.changeDimension(ServerPlayer.java:781) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.Entity.changeDimension(Entity.java:2489) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.Entity.handleNetherPortal(Entity.java:2105) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.Entity.baseTick(Entity.java:440) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.baseTick(LivingEntity.java:337) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.world.entity.Entity.tick(Entity.java:423) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2287) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:237) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:842) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Suspected Mod: 
+	Chunk Randomizer (chunktransformer), Version: 1.0.0
+		at TRANSFORMER/chunktransformer@1.0.0/net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerChangedDimension(ChunkTransformerMod.java:57)
+Stacktrace:
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerChangedDimension(ChunkTransformerMod.java:57) ~[main/:?] {re:classloading}
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerChangedDimension_PlayerChangedDimensionEvent.invoke(.dynamic) ~[main/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?] {}
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?] {re:classloading}
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerChangedDimension(ForgeEventFactory.java:686) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerPlayer.changeDimension(ServerPlayer.java:781) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.Entity.changeDimension(Entity.java:2489) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.Entity.handleNetherPortal(Entity.java:2105) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.Entity.baseTick(Entity.java:440) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.baseTick(LivingEntity.java:337) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.world.entity.Entity.tick(Entity.java:423) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2287) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:237) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.server.level.ServerPlayer)
+	Entity ID: 231
+	Entity Name: Dev
+	Entity's Exact location: -0.50, 73.12, 0.30
+	Entity's Block location: World: (-1,73,0), Section: (at 15,9,0 in -1,4,0; chunk contains blocks -16,0,0 to -1,255,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:842) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.4
+	Minecraft Version ID: 1.20.4
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.10, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 485083368 bytes (462 MiB) / 1822425088 bytes (1738 MiB) up to 4114612224 bytes (3924 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 5700U with Radeon Graphics         
+	Identifier: AuthenticAMD Family 23 Model 104 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 1.80
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 512.00
+	Graphics card #0 deviceId: 0x164c
+	Graphics card #0 versionInfo: DriverVersion=31.0.21914.8004
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 18156.90
+	Virtual memory used (MB): 17253.77
+	Swap memory total (MB): 2463.16
+	Swap memory used (MB): 194.54
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/231, l='ServerLevel[New World]', x=-0.50, y=73.12, z=0.30]]
+	Data Packs: vanilla (incompatible), mod:forge (incompatible), mod:chunktransformer (incompatible)
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.1.2
+	ModLauncher launch target: forge_userdev_client
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/ slf4jfixer PLUGINSERVICE 
+		/ runtimedistcleaner PLUGINSERVICE 
+		/ runtime_enum_extender PLUGINSERVICE 
+		/ object_holder_definalize PLUGINSERVICE 
+		/ capability_token_subclass PLUGINSERVICE 
+		/ accesstransformer PLUGINSERVICE 
+		/ eventbus PLUGINSERVICE 
+		/ mixin PLUGINSERVICE 
+		/ fml TRANSFORMATIONSERVICE 
+		/ mixin TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@49
+		javafml@49.1.21
+	Mod List: 
+		                                                  |Minecraft                     |minecraft                     |1.20.4              |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |49.1.21             |DONE      |Manifest: NOSIGNATURE
+		main                                              |Chunk Randomizer              |chunktransformer              |1.0.0               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 007adee3-c2be-415d-a32f-7e3d4c52a98f
+	FML: 0.0
+	Forge: net.minecraftforge:49.1.21
