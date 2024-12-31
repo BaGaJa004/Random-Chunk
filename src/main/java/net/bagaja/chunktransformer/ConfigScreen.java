@@ -3,26 +3,38 @@ package net.bagaja.chunktransformer;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.components.MultiLineLabel;
+import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.lwjgl.glfw.GLFW;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 public class ConfigScreen extends Screen {
     private final Screen lastScreen;
     private final BlockConfig config;
     private int scrollOffset = 0;
     private static final int BUTTONS_PER_PAGE = 10;
-    private List<Block> allBlocks;
+    private List<Block> displayedBlocks;
+    private EditBox searchBox;
 
     public ConfigScreen(Screen lastScreen, BlockConfig config) {
         super(Component.literal("Chunk Transformer Configuration"));
         this.lastScreen = lastScreen;
         this.config = config;
-        this.allBlocks = new ArrayList<>();
-        ForgeRegistries.BLOCKS.forEach(this.allBlocks::add);
+        this.displayedBlocks = new ArrayList<>();
+        refreshBlockList("");
+    }
+
+    private void refreshBlockList(String searchTerm) {
+        displayedBlocks = StreamSupport.stream(ForgeRegistries.BLOCKS.spliterator(), false)
+                .filter(block -> searchTerm.isEmpty() ||
+                        ForgeRegistries.BLOCKS.getKey(block).toString().toLowerCase().contains(searchTerm.toLowerCase()))
+                .collect(Collectors.toList());
+        scrollOffset = 0;
     }
 
     @Override
@@ -31,14 +43,21 @@ public class ConfigScreen extends Screen {
         int buttonHeight = 20;
         int spacing = 24;
 
-        // Add navigation buttons
+        // Search box
+        searchBox = new EditBox(this.font, width / 2 - buttonWidth / 2, 0, buttonWidth, 20, Component.literal("Search blocks"));
+        searchBox.setMaxLength(50);
+        searchBox.setResponder(this::refreshBlockList);
+        this.addRenderableWidget(searchBox);
+
+        // Done button
         this.addRenderableWidget(Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
                 .pos(width / 2 - 100, height - 28)
                 .size(200, 20)
                 .build());
 
+        // Scroll buttons
         this.addRenderableWidget(Button.builder(Component.literal("⬆"), button -> scrollUp())
-                .pos(width / 2 + buttonWidth / 2 + 4, 20)
+                .pos(width / 2 + buttonWidth / 2 + 4, 24)
                 .size(20, 20)
                 .build());
 
@@ -47,10 +66,19 @@ public class ConfigScreen extends Screen {
                 .size(20, 20)
                 .build());
 
+        // Block toggle buttons
+        addBlockButtons();
+    }
+
+    private void addBlockButtons() {
+        int buttonWidth = 200;
+        int buttonHeight = 20;
+        int spacing = 24;
+
         // Add block toggle buttons
         int startIndex = scrollOffset * BUTTONS_PER_PAGE;
-        for (int i = 0; i < BUTTONS_PER_PAGE && startIndex + i < allBlocks.size(); i++) {
-            Block block = allBlocks.get(startIndex + i);
+        for (int i = 0; i < BUTTONS_PER_PAGE && startIndex + i < displayedBlocks.size(); i++) {
+            Block block = displayedBlocks.get(startIndex + i);
             String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
             boolean enabled = config.isBlockEnabled(block);
 
@@ -62,7 +90,7 @@ public class ConfigScreen extends Screen {
                                         (config.isBlockEnabled(block) ? "✔ " : "✘ ") + blockId
                                 ));
                             })
-                    .pos(width / 2 - buttonWidth / 2, 20 + i * spacing)
+                    .pos(width / 2 - buttonWidth / 2, 24 + i * spacing)
                     .size(buttonWidth, buttonHeight)
                     .build());
         }
@@ -71,21 +99,45 @@ public class ConfigScreen extends Screen {
     private void scrollUp() {
         if (scrollOffset > 0) {
             scrollOffset--;
-            init();
+            clearWidgets(); // Clear existing widgets
+            init(); // Reinitialize
         }
     }
 
     private void scrollDown() {
-
+        if ((scrollOffset + 1) * BUTTONS_PER_PAGE < displayedBlocks.size()) {
+            scrollOffset++;
+            clearWidgets(); // Clear existing widgets
+            init(); // Reinitialize
+        }
     }
 
     @Override
-    public void render(net.minecraft.client.gui.GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        if (keyCode == GLFW.GLFW_KEY_ESCAPE) {
+            minecraft.setScreen(lastScreen);
+            return true;
+        }
+        return super.keyPressed(keyCode, scanCode, modifiers);
+    }
+
+    @Override
+    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
         this.renderBackground(graphics);
-        graphics.drawCenteredString(this.font, this.title, this.width / 2, 8, 0xFFFFFF);
         super.render(graphics, mouseX, mouseY, partialTicks);
+
+        // Render page number
+        int totalPages = (int) Math.ceil((double) displayedBlocks.size() / BUTTONS_PER_PAGE);
+        graphics.drawCenteredString(this.font,
+                Component.literal("Page " + (scrollOffset + 1) + " of " + totalPages),
+                this.width / 2, height - 48, 0xFFFFFF);
     }
 
     private void renderBackground(GuiGraphics graphics) {
+        renderDirtBackground(graphics);
+    }
+
+    public void renderDirtBackground(GuiGraphics graphics) {
+        graphics.fillGradient(0, 0, this.width, this.height, 0xC0101010, 0xD0101010);
     }
 }

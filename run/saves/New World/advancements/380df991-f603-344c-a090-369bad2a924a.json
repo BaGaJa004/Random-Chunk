@@ -1,313 +1,145 @@
 {
-  "minecraft:recipes/redstone/lever": {
+  "minecraft:recipes/combat/leather_helmet": {
     "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
+      "has_leather": "2024-12-31 02:04:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/ladder": {
+  "minecraft:recipes/misc/flower_banner_pattern": {
     "criteria": {
-      "has_stick": "2024-12-31 01:03:31 +0100"
+      "has_oxeye_daisy": "2024-12-31 02:04:04 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/mangrove_boat": {
+  "minecraft:recipes/combat/leather_leggings": {
     "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
+      "has_leather": "2024-12-31 02:04:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/spruce_button": {
+  "minecraft:recipes/food/cooked_beef_from_smoking": {
     "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
+      "has_beef": "2024-12-31 02:04:42 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/torch": {
+  "minecraft:recipes/food/cooked_mutton_from_smoking": {
     "criteria": {
-      "has_stone_pickaxe": "2024-12-31 01:04:32 +0100"
+      "has_mutton": "2024-12-31 02:03:50 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dark_oak_planks": {
+  "minecraft:adventure/kill_mob_near_sculk_catalyst": {
     "criteria": {
-      "has_log": "2024-12-31 01:05:49 +0100"
+      "kill_mob_near_sculk_catalyst": "2024-12-31 02:03:50 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/spruce_planks": {
+  "minecraft:recipes/food/cooked_mutton": {
     "criteria": {
-      "has_logs": "2024-12-31 01:01:20 +0100"
+      "has_mutton": "2024-12-31 02:03:50 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/spruce_pressure_plate": {
+  "minecraft:recipes/decorations/white_banner": {
     "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
+      "has_white_wool": "2024-12-31 02:03:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/combat/stone_sword": {
+  "minecraft:recipes/decorations/item_frame": {
     "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
+      "has_leather": "2024-12-31 02:04:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/cobblestone_wall": {
+  "minecraft:recipes/decorations/painting": {
     "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
+      "has_wool": "2024-12-31 02:03:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/tools/stone_pickaxe": {
+  "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
+      "has_leather": "2024-12-31 02:04:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/tools/stone_axe": {
+  "minecraft:recipes/food/cooked_mutton_from_campfire_cooking": {
     "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/campfire": {
-    "criteria": {
-      "has_stick": "2024-12-31 01:03:31 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_hoe": {
-    "criteria": {
-      "has_stick": "2024-12-31 01:03:31 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/mine_stone": {
-    "criteria": {
-      "get_stone": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/furnace": {
-    "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/charcoal": {
-    "criteria": {
-      "has_log": "2024-12-31 01:01:20 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_pickaxe": {
-    "criteria": {
-      "has_stick": "2024-12-31 01:03:31 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dark_oak_wood": {
-    "criteria": {
-      "has_log": "2024-12-31 01:05:49 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/upgrade_tools": {
-    "criteria": {
-      "stone_pickaxe": "2024-12-31 01:04:32 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_axe": {
-    "criteria": {
-      "has_stick": "2024-12-31 01:03:31 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/spruce_sign": {
-    "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/spruce_trapdoor": {
-    "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/spruce_door": {
-    "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/spruce_fence_gate": {
-    "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
+      "has_mutton": "2024-12-31 02:03:50 +0100"
     },
     "done": true
   },
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2024-12-31 01:01:01 +0100"
+      "unlock_right_away": "2024-12-31 02:02:50 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/chest": {
+  "minecraft:adventure/root": {
     "criteria": {
-      "has_lots_of_items": "2024-12-31 01:05:41 +0100"
+      "killed_something": "2024-12-31 02:03:50 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/tools/wooden_shovel": {
+  "minecraft:recipes/misc/red_dye_from_poppy": {
     "criteria": {
-      "has_stick": "2024-12-31 01:03:31 +0100"
+      "has_poppy": "2024-12-31 02:04:10 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/misc/stick": {
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
     "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_slab": {
-    "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
-    "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/acacia_boat": {
-    "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/cherry_boat": {
-    "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/wooden_sword": {
-    "criteria": {
-      "has_stick": "2024-12-31 01:03:31 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/stone": {
-    "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
+      "has_dandelion": "2024-12-31 02:04:04 +0100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:taiga": "2024-12-31 01:01:03 +0100"
+      "minecraft:plains": "2024-12-31 02:02:51 +0100"
     },
     "done": false
   },
-  "minecraft:recipes/transportation/bamboo_raft": {
+  "minecraft:recipes/combat/leather_boots": {
     "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
+      "has_leather": "2024-12-31 02:04:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/barrel": {
+  "minecraft:recipes/misc/light_gray_dye_from_oxeye_daisy": {
     "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
+      "has_oxeye_daisy": "2024-12-31 02:04:04 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+  "minecraft:recipes/decorations/white_bed": {
     "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
+      "has_white_wool": "2024-12-31 02:03:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+  "minecraft:recipes/misc/leather_horse_armor": {
     "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
+      "has_leather": "2024-12-31 02:04:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/spruce_boat": {
+  "minecraft:recipes/decorations/white_carpet": {
     "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
+      "has_white_wool": "2024-12-31 02:03:51 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cobblestone_stairs": {
+  "minecraft:recipes/food/cooked_beef": {
     "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
+      "has_beef": "2024-12-31 02:04:42 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/birch_boat": {
+  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
     "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_hoe": {
-    "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/spruce_fence": {
-    "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/spruce_stairs": {
-    "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/oak_boat": {
-    "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_shovel": {
-    "criteria": {
-      "has_cobblestone": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/spruce_slab": {
-    "criteria": {
-      "has_planks": "2024-12-31 01:03:18 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/root": {
-    "criteria": {
-      "crafting_table": "2024-12-31 01:03:23 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/jungle_boat": {
-    "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "in_water": "2024-12-31 01:04:09 +0100"
+      "has_beef": "2024-12-31 02:04:42 +0100"
     },
     "done": true
   },
