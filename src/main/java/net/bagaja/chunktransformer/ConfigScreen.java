@@ -38,7 +38,7 @@ public class ConfigScreen extends Screen {
 
     @Override
     protected void init() {
-        super.init();  // This ensures font is initialized
+        super.init();
 
         // Initial block list population if it's empty
         if (displayedBlocks.isEmpty()) {
@@ -53,27 +53,33 @@ public class ConfigScreen extends Screen {
         // Preserve the search box text
         String previousSearch = searchBox != null ? searchBox.getValue() : "";
 
-        // Create and add the search box
+        // Create and add the search box with visible text
         searchBox = new EditBox(this.font, width / 2 - buttonWidth / 2, 24, buttonWidth, 20, Component.literal("Search blocks"));
         searchBox.setMaxLength(50);
         searchBox.setValue(previousSearch);
         searchBox.setResponder(this::updateSearch);
+        searchBox.setTextColor(0xFFFFFF); // Make text white
+        searchBox.setBordered(true); // Add border
+        searchBox.setFocused(true); // Optional: automatically focus the search box
         this.addRenderableWidget(searchBox);
 
-        // Enable All button
+        // Enable All button with fixed functionality
         Button selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
+                    // Enable all displayed blocks
                     for (Block block : displayedBlocks) {
                         String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
                         config.getBlockStates().put(blockId, true);
                     }
                     config.save();
+
+                    // Force refresh the UI to show the changes
                     clearWidgets();
                     init();
                 })
                 .pos(width / 2 - buttonWidth / 2, 48)
                 .size(buttonWidth, buttonHeight)
                 .build();
-        this.addRenderableWidget(selectAllButton);
+        this.addRenderableWidget(selectAllButton);;
 
         // Done button
         this.addRenderableWidget(Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
@@ -126,7 +132,7 @@ public class ConfigScreen extends Screen {
                                         (config.isBlockEnabled(block) ? "✔ " : "✘ ") + blockId
                                 ));
                             })
-                    .pos(width / 2 - buttonWidth / 2, 72 + i * spacing)  // Adjusted Y position
+                    .pos(width / 2 - buttonWidth / 2, 72 + i * spacing)
                     .size(buttonWidth, buttonHeight)
                     .build());
         }
