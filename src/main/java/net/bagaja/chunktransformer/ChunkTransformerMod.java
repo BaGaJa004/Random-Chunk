@@ -154,4 +154,5 @@ public class ChunkTransformerMod {
 }
 
 // no replacement after reopening world
-// menu to customize random items
+// enable/disable button actually working & and more space between the buttons
+// search bar updating live time

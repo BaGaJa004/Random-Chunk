@@ -43,13 +43,32 @@ public class ConfigScreen extends Screen {
         int buttonHeight = 20;
         int spacing = 24;
 
-        // Search box
-        searchBox = new EditBox(this.font, width / 2 - buttonWidth / 2, 0, buttonWidth, 20, Component.literal("Search blocks"));
+        // Add some margin to the top for the search box
+        searchBox = new EditBox(this.font, width / 2 - buttonWidth / 2, 24, buttonWidth, 20, Component.literal("Search blocks"));
         searchBox.setMaxLength(50);
         searchBox.setResponder(this::refreshBlockList);
         this.addRenderableWidget(searchBox);
 
-        // Done button
+
+        Button selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
+                    // Toggle all blocks to enabled
+                    ForgeRegistries.BLOCKS.forEach(block -> {
+                        String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
+                        config.getBlockStates().put(blockId, true);
+                    });
+                    config.save();
+
+                    // Refresh the current view
+                    refreshBlockList(searchBox.getValue());
+                    clearWidgets();
+                    init();
+                })
+                .pos(width / 2 - buttonWidth / 2, 48)  // Position it right below the search box
+                .size(buttonWidth, buttonHeight)
+                .build();
+        this.addRenderableWidget(selectAllButton);
+
+        // Done button (adjusted position to make room for new elements)
         this.addRenderableWidget(Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
                 .pos(width / 2 - 100, height - 28)
                 .size(200, 20)
@@ -57,7 +76,7 @@ public class ConfigScreen extends Screen {
 
         // Scroll buttons
         this.addRenderableWidget(Button.builder(Component.literal("⬆"), button -> scrollUp())
-                .pos(width / 2 + buttonWidth / 2 + 4, 24)
+                .pos(width / 2 + buttonWidth / 2 + 4, 72)  // Adjusted Y position
                 .size(20, 20)
                 .build());
 
@@ -90,7 +109,7 @@ public class ConfigScreen extends Screen {
                                         (config.isBlockEnabled(block) ? "✔ " : "✘ ") + blockId
                                 ));
                             })
-                    .pos(width / 2 - buttonWidth / 2, 24 + i * spacing)
+                    .pos(width / 2 - buttonWidth / 2, 72 + i * spacing)  // Adjusted Y position
                     .size(buttonWidth, buttonHeight)
                     .build());
         }
