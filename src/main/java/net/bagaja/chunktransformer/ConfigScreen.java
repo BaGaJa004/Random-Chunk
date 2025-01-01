@@ -26,7 +26,6 @@ public class ConfigScreen extends Screen {
         this.lastScreen = lastScreen;
         this.config = config;
         this.displayedBlocks = new ArrayList<>();
-        refreshBlockList("");
     }
 
     private void refreshBlockList(String searchTerm) {
@@ -39,36 +38,44 @@ public class ConfigScreen extends Screen {
 
     @Override
     protected void init() {
+        super.init();  // This ensures font is initialized
+
+        // Initial block list population if it's empty
+        if (displayedBlocks.isEmpty()) {
+            displayedBlocks = StreamSupport.stream(ForgeRegistries.BLOCKS.spliterator(), false)
+                    .collect(Collectors.toList());
+        }
+
         int buttonWidth = 200;
         int buttonHeight = 20;
         int spacing = 24;
 
-        // Add some margin to the top for the search box
+        // Preserve the search box text
+        String previousSearch = searchBox != null ? searchBox.getValue() : "";
+
+        // Create and add the search box
         searchBox = new EditBox(this.font, width / 2 - buttonWidth / 2, 24, buttonWidth, 20, Component.literal("Search blocks"));
         searchBox.setMaxLength(50);
-        searchBox.setResponder(this::refreshBlockList);
+        searchBox.setValue(previousSearch);
+        searchBox.setResponder(this::updateSearch);
         this.addRenderableWidget(searchBox);
 
-
+        // Enable All button
         Button selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
-                    // Toggle all blocks to enabled
-                    ForgeRegistries.BLOCKS.forEach(block -> {
+                    for (Block block : displayedBlocks) {
                         String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
                         config.getBlockStates().put(blockId, true);
-                    });
+                    }
                     config.save();
-
-                    // Refresh the current view
-                    refreshBlockList(searchBox.getValue());
                     clearWidgets();
                     init();
                 })
-                .pos(width / 2 - buttonWidth / 2, 48)  // Position it right below the search box
+                .pos(width / 2 - buttonWidth / 2, 48)
                 .size(buttonWidth, buttonHeight)
                 .build();
         this.addRenderableWidget(selectAllButton);
 
-        // Done button (adjusted position to make room for new elements)
+        // Done button
         this.addRenderableWidget(Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
                 .pos(width / 2 - 100, height - 28)
                 .size(200, 20)
@@ -76,7 +83,7 @@ public class ConfigScreen extends Screen {
 
         // Scroll buttons
         this.addRenderableWidget(Button.builder(Component.literal("⬆"), button -> scrollUp())
-                .pos(width / 2 + buttonWidth / 2 + 4, 72)  // Adjusted Y position
+                .pos(width / 2 + buttonWidth / 2 + 4, 72)
                 .size(20, 20)
                 .build());
 
@@ -87,6 +94,16 @@ public class ConfigScreen extends Screen {
 
         // Block toggle buttons
         addBlockButtons();
+    }
+
+    private void updateSearch(String searchTerm) {
+        displayedBlocks = StreamSupport.stream(ForgeRegistries.BLOCKS.spliterator(), false)
+                .filter(block -> searchTerm.isEmpty() ||
+                        ForgeRegistries.BLOCKS.getKey(block).toString().toLowerCase().contains(searchTerm.toLowerCase()))
+                .collect(Collectors.toList());
+        scrollOffset = 0;
+        clearWidgets();
+        init();
     }
 
     private void addBlockButtons() {

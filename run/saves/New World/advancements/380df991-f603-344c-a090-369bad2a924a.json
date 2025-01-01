@@ -143,6 +143,19 @@
     },
     "done": true
   },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "beef": "2024-12-31 02:21:11 +0100",
+      "golden_carrot": "2025-01-01 22:20:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2024-12-31 02:21:11 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
     "criteria": {
       "has_azure_bluet": "2024-12-31 02:21:39 +0100"
@@ -155,27 +168,81 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/blue_dye_from_cornflower": {
-    "criteria": {
-      "has_cornflower": "2024-12-31 02:23:29 +0100"
-    },
-    "done": true
-  },
   "minecraft:husbandry/obtain_netherite_hoe": {
     "criteria": {
       "netherite_hoe": "2024-12-31 02:22:06 +0100"
     },
     "done": true
   },
-  "minecraft:husbandry/balanced_diet": {
+  "minecraft:recipes/misc/blue_dye_from_cornflower": {
     "criteria": {
-      "beef": "2024-12-31 02:21:11 +0100"
+      "has_cornflower": "2024-12-31 02:23:29 +0100"
     },
-    "done": false
+    "done": true
   },
-  "minecraft:husbandry/root": {
+  "minecraft:recipes/redstone/warped_pressure_plate": {
     "criteria": {
-      "consumed_item": "2024-12-31 02:21:11 +0100"
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/warped_slab": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/warped_fence_gate": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/warped_fence": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/warped_button": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/warped_stairs": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/warped_trapdoor": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/warped_sign": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/warped_door": {
+    "criteria": {
+      "has_planks": "2025-01-01 22:30:25 +0100"
     },
     "done": true
   },
