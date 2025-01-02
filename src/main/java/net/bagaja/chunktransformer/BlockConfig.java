@@ -41,7 +41,7 @@ public class BlockConfig {
     }
 
     public Map<String, Boolean> getBlockStates() {
-        return new HashMap<>(blockStates);
+        return blockStates; // Return direct reference instead of copy
     }
 
     public void load() {

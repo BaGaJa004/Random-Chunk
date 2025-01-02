@@ -20,20 +20,13 @@ public class ConfigScreen extends Screen {
     private static final int BUTTONS_PER_PAGE = 10;
     private List<Block> displayedBlocks;
     private EditBox searchBox;
+    private List<Button> blockButtons = new ArrayList<>();
 
     public ConfigScreen(Screen lastScreen, BlockConfig config) {
         super(Component.literal("Chunk Transformer Configuration"));
         this.lastScreen = lastScreen;
         this.config = config;
         this.displayedBlocks = new ArrayList<>();
-    }
-
-    private void refreshBlockList(String searchTerm) {
-        displayedBlocks = StreamSupport.stream(ForgeRegistries.BLOCKS.spliterator(), false)
-                .filter(block -> searchTerm.isEmpty() ||
-                        ForgeRegistries.BLOCKS.getKey(block).toString().toLowerCase().contains(searchTerm.toLowerCase()))
-                .collect(Collectors.toList());
-        scrollOffset = 0;
     }
 
     @Override
@@ -63,7 +56,7 @@ public class ConfigScreen extends Screen {
         searchBox.setFocused(true); // Optional: automatically focus the search box
         this.addRenderableWidget(searchBox);
 
-        // Enable All button with fixed functionality
+        // Enable All button
         Button selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
                     // Enable all displayed blocks
                     for (Block block : displayedBlocks) {
@@ -72,14 +65,14 @@ public class ConfigScreen extends Screen {
                     }
                     config.save();
 
-                    // Force refresh the UI to show the changes
+                    // Force refresh all block buttons
                     clearWidgets();
                     init();
                 })
                 .pos(width / 2 - buttonWidth / 2, 48)
                 .size(buttonWidth, buttonHeight)
                 .build();
-        this.addRenderableWidget(selectAllButton);;
+        this.addRenderableWidget(selectAllButton);
 
         // Done button
         this.addRenderableWidget(Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
@@ -116,6 +109,7 @@ public class ConfigScreen extends Screen {
         int buttonWidth = 200;
         int buttonHeight = 20;
         int spacing = 24;
+        blockButtons.clear();
 
         // Add block toggle buttons
         int startIndex = scrollOffset * BUTTONS_PER_PAGE;
@@ -124,7 +118,7 @@ public class ConfigScreen extends Screen {
             String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
             boolean enabled = config.isBlockEnabled(block);
 
-            this.addRenderableWidget(Button.builder(
+            Button blockButton = Button.builder(
                             Component.literal((enabled ? "✔ " : "✘ ") + blockId),
                             button -> {
                                 config.toggleBlock(blockId);
@@ -134,23 +128,26 @@ public class ConfigScreen extends Screen {
                             })
                     .pos(width / 2 - buttonWidth / 2, 72 + i * spacing)
                     .size(buttonWidth, buttonHeight)
-                    .build());
+                    .build();
+
+            blockButtons.add(blockButton);
+            this.addRenderableWidget(blockButton);
         }
     }
 
     private void scrollUp() {
         if (scrollOffset > 0) {
             scrollOffset--;
-            clearWidgets(); // Clear existing widgets
-            init(); // Reinitialize
+            clearWidgets();
+            init();
         }
     }
 
     private void scrollDown() {
         if ((scrollOffset + 1) * BUTTONS_PER_PAGE < displayedBlocks.size()) {
             scrollOffset++;
-            clearWidgets(); // Clear existing widgets
-            init(); // Reinitialize
+            clearWidgets();
+            init();
         }
     }
 
