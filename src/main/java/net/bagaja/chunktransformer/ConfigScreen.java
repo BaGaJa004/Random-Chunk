@@ -21,6 +21,7 @@ public class ConfigScreen extends Screen {
     private List<Block> displayedBlocks;
     private EditBox searchBox;
     private List<Button> blockButtons = new ArrayList<>();
+    private String currentSearchText = "";
 
     public ConfigScreen(Screen lastScreen, BlockConfig config) {
         super(Component.literal("Chunk Transformer Configuration"));
@@ -50,10 +51,10 @@ public class ConfigScreen extends Screen {
         searchBox = new EditBox(this.font, width / 2 - buttonWidth / 2, 24, buttonWidth, 20, Component.literal("Search blocks"));
         searchBox.setMaxLength(50);
         searchBox.setValue(previousSearch);
-        searchBox.setResponder(this::updateSearch);
-        searchBox.setTextColor(0xFFFFFF); // Make text white
-        searchBox.setBordered(true); // Add border
-        searchBox.setFocused(true); // Optional: automatically focus the search box
+        searchBox.setResponder(this::onSearchTextChanged);
+        searchBox.setTextColor(0xFFFFFF);
+        searchBox.setBordered(true);
+        searchBox.setFocused(true);
         this.addRenderableWidget(searchBox);
 
         // Enable All button
@@ -93,6 +94,12 @@ public class ConfigScreen extends Screen {
 
         // Block toggle buttons
         addBlockButtons();
+    }
+
+    // New method to handle search text changes
+    private void onSearchTextChanged(String searchTerm) {
+        currentSearchText = searchTerm; // Update the current search text immediately
+        updateSearch(searchTerm); // Then update the search results
     }
 
     private void updateSearch(String searchTerm) {
@@ -163,6 +170,15 @@ public class ConfigScreen extends Screen {
     @Override
     public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
         this.renderBackground(graphics);
+
+        // Draw the search text mirror label
+        String labelText = "Search: " + currentSearchText;
+        int labelWidth = this.font.width(labelText);
+        graphics.drawString(this.font,
+                labelText,
+                5, 5, // Position in top-left corner
+                0xFFFFFF); // White color
+
         super.render(graphics, mouseX, mouseY, partialTicks);
 
         // Render page number
