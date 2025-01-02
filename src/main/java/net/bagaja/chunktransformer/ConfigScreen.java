@@ -22,6 +22,10 @@ public class ConfigScreen extends Screen {
     private EditBox searchBox;
     private List<Button> blockButtons = new ArrayList<>();
     private String currentSearchText = "";
+    private Button selectAllButton;
+    private Button scrollUpButton;
+    private Button scrollDownButton;
+    private Button doneButton;
 
     public ConfigScreen(Screen lastScreen, BlockConfig config) {
         super(Component.literal("Chunk Transformer Configuration"));
@@ -58,17 +62,13 @@ public class ConfigScreen extends Screen {
         this.addRenderableWidget(searchBox);
 
         // Enable All button
-        Button selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
-                    // Enable all displayed blocks
+        selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
                     for (Block block : displayedBlocks) {
                         String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
                         config.getBlockStates().put(blockId, true);
                     }
                     config.save();
-
-                    // Force refresh all block buttons
-                    clearWidgets();
-                    init();
+                    refreshButtons();
                 })
                 .pos(width / 2 - buttonWidth / 2, 48)
                 .size(buttonWidth, buttonHeight)
@@ -76,47 +76,54 @@ public class ConfigScreen extends Screen {
         this.addRenderableWidget(selectAllButton);
 
         // Done button
-        this.addRenderableWidget(Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
+        doneButton = Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
                 .pos(width / 2 - 100, height - 28)
                 .size(200, 20)
-                .build());
+                .build();
+        this.addRenderableWidget(doneButton);
 
         // Scroll buttons
-        this.addRenderableWidget(Button.builder(Component.literal("⬆"), button -> scrollUp())
+        scrollUpButton = Button.builder(Component.literal("⬆"), button -> scrollUp())
                 .pos(width / 2 + buttonWidth / 2 + 4, 72)
                 .size(20, 20)
-                .build());
+                .build();
+        this.addRenderableWidget(scrollUpButton);
 
-        this.addRenderableWidget(Button.builder(Component.literal("⬇"), button -> scrollDown())
+        scrollDownButton = Button.builder(Component.literal("⬇"), button -> scrollDown())
                 .pos(width / 2 + buttonWidth / 2 + 4, height - 48)
                 .size(20, 20)
-                .build());
+                .build();
+        this.addRenderableWidget(scrollDownButton);
 
         // Block toggle buttons
         addBlockButtons();
     }
 
-    // New method to handle search text changes
     private void onSearchTextChanged(String searchTerm) {
-        currentSearchText = searchTerm; // Update the current search text immediately
-        updateSearch(searchTerm); // Then update the search results
-    }
-
-    private void updateSearch(String searchTerm) {
+        currentSearchText = searchTerm;
         displayedBlocks = StreamSupport.stream(ForgeRegistries.BLOCKS.spliterator(), false)
                 .filter(block -> searchTerm.isEmpty() ||
                         ForgeRegistries.BLOCKS.getKey(block).toString().toLowerCase().contains(searchTerm.toLowerCase()))
                 .collect(Collectors.toList());
         scrollOffset = 0;
-        clearWidgets();
-        init();
+        refreshButtons();
+    }
+
+    private void refreshButtons() {
+        // Remove all existing block buttons from renderables and children
+        blockButtons.forEach(button -> {
+            removeWidget(button);
+        });
+        blockButtons.clear();
+
+        // Add new block buttons
+        addBlockButtons();
     }
 
     private void addBlockButtons() {
         int buttonWidth = 200;
         int buttonHeight = 20;
         int spacing = 24;
-        blockButtons.clear();
 
         // Add block toggle buttons
         int startIndex = scrollOffset * BUTTONS_PER_PAGE;
@@ -145,16 +152,14 @@ public class ConfigScreen extends Screen {
     private void scrollUp() {
         if (scrollOffset > 0) {
             scrollOffset--;
-            clearWidgets();
-            init();
+            refreshButtons();
         }
     }
 
     private void scrollDown() {
         if ((scrollOffset + 1) * BUTTONS_PER_PAGE < displayedBlocks.size()) {
             scrollOffset++;
-            clearWidgets();
-            init();
+            refreshButtons();
         }
     }
 

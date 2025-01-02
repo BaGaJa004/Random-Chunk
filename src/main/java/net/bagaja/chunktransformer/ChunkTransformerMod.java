@@ -153,5 +153,4 @@ public class ChunkTransformerMod {
     }
 }
 
-// no replacement after reopening world
-// label for search text
+// no replacement after reopening world (optional)
