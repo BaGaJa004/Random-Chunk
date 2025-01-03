@@ -1,5 +1,8 @@
 package net.bagaja.chunktransformer;
 
+import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
@@ -16,10 +19,17 @@ import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.TickEvent;
 import org.lwjgl.glfw.GLFW;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.io.Writer;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 
 @Mod(ChunkTransformerMod.MODID)
@@ -32,6 +42,44 @@ public class ChunkTransformerMod {
     private static final Random RANDOM = new Random();
     private static final Set<Long> transformedChunks = new HashSet<>();
     private ChunkPos lastChunkPos = null;
+    private static boolean saveChunkTransformations = false;
+    private static final Path CHUNK_SAVE_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_chunks.json");
+    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+
+    // Method to toggle save configuration
+    public static void toggleSaveChunkTransformations() {
+        saveChunkTransformations = !saveChunkTransformations;
+        saveChunkSaveConfig();
+    }
+
+    // Method to check if chunk transformations should be saved
+    public static boolean shouldSaveChunkTransformations() {
+        return saveChunkTransformations;
+    }
+
+    // Save chunk save configuration
+    private static void saveChunkSaveConfig() {
+        try {
+            Files.createDirectories(CHUNK_SAVE_PATH.getParent());
+            try (Writer writer = Files.newBufferedWriter(CHUNK_SAVE_PATH)) {
+                GSON.toJson(Map.of("saveChunkTransformations", saveChunkTransformations), writer);
+            }
+        } catch (IOException e) {
+            LOGGER.error("Failed to save chunk transformation save configuration", e);
+        }
+    }
+
+    // Load chunk save configuration
+    private static void loadChunkSaveConfig() {
+        if (Files.exists(CHUNK_SAVE_PATH)) {
+            try (Reader reader = Files.newBufferedReader(CHUNK_SAVE_PATH)) {
+                Map<String, Boolean> config = GSON.fromJson(reader, new TypeToken<Map<String, Boolean>>(){}.getType());
+                saveChunkTransformations = config.getOrDefault("saveChunkTransformations", false);
+            } catch (IOException e) {
+                LOGGER.error("Failed to load chunk transformation save configuration", e);
+            }
+        }
+    }
 
     public ChunkTransformerMod() {
         configKey = new KeyMapping(
@@ -39,6 +87,9 @@ public class ChunkTransformerMod {
                 GLFW.GLFW_KEY_K,
                 "key.categories.misc"
         );
+
+        // Load save configuration
+        loadChunkSaveConfig();
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(this::onKeyInput);
@@ -77,6 +128,11 @@ public class ChunkTransformerMod {
 
     private void handleChunkEnter(Player player, ChunkPos chunkPos) {
         long chunkPosLong = chunkPos.toLong();
+
+        // If saving is disabled, always reset transformation
+        if (!saveChunkTransformations) {
+            transformedChunks.clear();
+        }
 
         // Check if chunk was already transformed
         if (transformedChunks.contains(chunkPosLong)) {

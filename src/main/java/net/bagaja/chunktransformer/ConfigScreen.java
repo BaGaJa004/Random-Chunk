@@ -26,6 +26,7 @@ public class ConfigScreen extends Screen {
     private Button scrollUpButton;
     private Button scrollDownButton;
     private Button doneButton;
+    private Button saveConfigButton;
 
     public ConfigScreen(Screen lastScreen, BlockConfig config) {
         super(Component.literal("Chunk Transformer Configuration"));
@@ -74,6 +75,19 @@ public class ConfigScreen extends Screen {
                 .size(buttonWidth, buttonHeight)
                 .build();
         this.addRenderableWidget(selectAllButton);
+
+        saveConfigButton = Button.builder(
+                        Component.literal((ChunkTransformerMod.shouldSaveChunkTransformations() ? "✔ " : "✘ ") + "Save Chunk Transformations"),
+                        button -> {
+                            ChunkTransformerMod.toggleSaveChunkTransformations();
+                            button.setMessage(Component.literal(
+                                    (ChunkTransformerMod.shouldSaveChunkTransformations() ? "✔ " : "✘ ") + "Save Chunk Transformations"
+                            ));
+                        })
+                .pos(width / 2 - buttonWidth / 2, 48 + buttonHeight + 4)  // Add spacing
+                .size(buttonWidth, buttonHeight)
+                .build();
+        this.addRenderableWidget(saveConfigButton);
 
         // Done button
         doneButton = Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
