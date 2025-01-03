@@ -62,6 +62,11 @@ public class ConfigScreen extends Screen {
         searchBox.setFocused(true);
         this.addRenderableWidget(searchBox);
 
+        // Calculate positions for the top buttons
+        int enableAllY = 48;
+        int saveConfigY = enableAllY + buttonHeight + 8; // Add 8 pixels of spacing
+        int firstBlockButtonY = saveConfigY + buttonHeight + 16; // Add 16 pixels of spacing before block buttons
+
         // Enable All button
         selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
                     for (Block block : displayedBlocks) {
@@ -71,11 +76,12 @@ public class ConfigScreen extends Screen {
                     config.save();
                     refreshButtons();
                 })
-                .pos(width / 2 - buttonWidth / 2, 48)
+                .pos(width / 2 - buttonWidth / 2, enableAllY)
                 .size(buttonWidth, buttonHeight)
                 .build();
         this.addRenderableWidget(selectAllButton);
 
+        // Save Config button
         saveConfigButton = Button.builder(
                         Component.literal((ChunkTransformerMod.shouldSaveChunkTransformations() ? "✔ " : "✘ ") + "Save Chunk Transformations"),
                         button -> {
@@ -84,7 +90,7 @@ public class ConfigScreen extends Screen {
                                     (ChunkTransformerMod.shouldSaveChunkTransformations() ? "✔ " : "✘ ") + "Save Chunk Transformations"
                             ));
                         })
-                .pos(width / 2 - buttonWidth / 2, 48 + buttonHeight + 4)  // Add spacing
+                .pos(width / 2 - buttonWidth / 2, saveConfigY)
                 .size(buttonWidth, buttonHeight)
                 .build();
         this.addRenderableWidget(saveConfigButton);
@@ -98,7 +104,7 @@ public class ConfigScreen extends Screen {
 
         // Scroll buttons
         scrollUpButton = Button.builder(Component.literal("⬆"), button -> scrollUp())
-                .pos(width / 2 + buttonWidth / 2 + 4, 72)
+                .pos(width / 2 + buttonWidth / 2 + 4, firstBlockButtonY)
                 .size(20, 20)
                 .build();
         this.addRenderableWidget(scrollUpButton);
@@ -110,7 +116,7 @@ public class ConfigScreen extends Screen {
         this.addRenderableWidget(scrollDownButton);
 
         // Block toggle buttons
-        addBlockButtons();
+        addBlockButtons(firstBlockButtonY);
     }
 
     private void onSearchTextChanged(String searchTerm) {
@@ -124,17 +130,20 @@ public class ConfigScreen extends Screen {
     }
 
     private void refreshButtons() {
-        // Remove all existing block buttons from renderables and children
         blockButtons.forEach(button -> {
             removeWidget(button);
         });
         blockButtons.clear();
 
-        // Add new block buttons
-        addBlockButtons();
+        // Calculate the same starting Y position as in init()
+        int enableAllY = 48;
+        int saveConfigY = enableAllY + 20 + 8;
+        int firstBlockButtonY = saveConfigY + 20 + 16;
+
+        addBlockButtons(firstBlockButtonY);
     }
 
-    private void addBlockButtons() {
+    private void addBlockButtons(int startY) {
         int buttonWidth = 200;
         int buttonHeight = 20;
         int spacing = 24;
@@ -154,7 +163,7 @@ public class ConfigScreen extends Screen {
                                         (config.isBlockEnabled(block) ? "✔ " : "✘ ") + blockId
                                 ));
                             })
-                    .pos(width / 2 - buttonWidth / 2, 72 + i * spacing)
+                    .pos(width / 2 - buttonWidth / 2, startY + i * spacing)
                     .size(buttonWidth, buttonHeight)
                     .build();
 
