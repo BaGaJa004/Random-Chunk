@@ -46,12 +46,26 @@ public class ChunkTransformerMod {
     private ChunkPos lastChunkPos = null;
     private static boolean saveChunkTransformations = false;
     private static final Path CHUNK_SAVE_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_chunks.json");
+    private static final Path TRANSFORMED_CHUNKS_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_transformed_chunks.json");
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
     // Method to toggle save configuration
     public static void toggleSaveChunkTransformations() {
         saveChunkTransformations = !saveChunkTransformations;
         saveChunkSaveConfig();
+
+        // Load transformed chunks when enabling, clear when disabling
+        if (saveChunkTransformations) {
+            loadTransformedChunks();
+        } else {
+            transformedChunks.clear();
+            // Delete the transformed chunks file when disabling
+            try {
+                Files.deleteIfExists(TRANSFORMED_CHUNKS_PATH);
+            } catch (IOException e) {
+                LOGGER.error("Failed to delete transformed chunks file", e);
+            }
+        }
     }
 
     // Method to check if chunk transformations should be saved
@@ -71,6 +85,35 @@ public class ChunkTransformerMod {
         }
     }
 
+    // Save transformed chunks to file
+    private static void saveTransformedChunks() {
+        if (!saveChunkTransformations) return;
+
+        try {
+            Files.createDirectories(TRANSFORMED_CHUNKS_PATH.getParent());
+            try (Writer writer = Files.newBufferedWriter(TRANSFORMED_CHUNKS_PATH)) {
+                GSON.toJson(transformedChunks, writer);
+            }
+        } catch (IOException e) {
+            LOGGER.error("Failed to save transformed chunks", e);
+        }
+    }
+
+    // Load transformed chunks from file
+    private static void loadTransformedChunks() {
+        if (!saveChunkTransformations) return;
+
+        if (Files.exists(TRANSFORMED_CHUNKS_PATH)) {
+            try (Reader reader = Files.newBufferedReader(TRANSFORMED_CHUNKS_PATH)) {
+                Set<Long> loadedChunks = GSON.fromJson(reader, new TypeToken<Set<Long>>(){}.getType());
+                if (loadedChunks != null) {
+                    transformedChunks.addAll(loadedChunks);
+                }
+            } catch (IOException e) {
+                LOGGER.error("Failed to load transformed chunks", e);
+            }
+        }
+    }
     // Load chunk save configuration
     private static void loadChunkSaveConfig() {
         if (Files.exists(CHUNK_SAVE_PATH)) {
@@ -93,6 +136,8 @@ public class ChunkTransformerMod {
 
         // Load save configuration
         loadChunkSaveConfig();
+        // Load previously transformed chunks if saving is enabled
+        loadTransformedChunks();
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(this::onKeyInput);
@@ -153,6 +198,11 @@ public class ChunkTransformerMod {
 
         // Add chunk to transformed list
         transformedChunks.add(chunkPosLong);
+
+        // Save transformed chunks if saving is enabled
+        if (saveChunkTransformations) {
+            saveTransformedChunks();
+        }
 
         // Get the level and chunk
         Level level = player.level();
