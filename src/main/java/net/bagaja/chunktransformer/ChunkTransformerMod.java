@@ -15,7 +15,9 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -82,6 +84,7 @@ public class ChunkTransformerMod {
     }
 
     public ChunkTransformerMod() {
+        // Initialize the key mapping
         configKey = new KeyMapping(
                 "key.chunktransformer.config",
                 GLFW.GLFW_KEY_K,
@@ -93,6 +96,15 @@ public class ChunkTransformerMod {
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(this::onKeyInput);
+    }
+
+    // Register the key mapping on the MOD event bus
+    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onKeyRegister(RegisterKeyMappingsEvent event) {
+            event.register(configKey);
+        }
     }
 
     public static BlockConfig getBlockConfig() {
