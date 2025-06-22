@@ -44,12 +44,44 @@ public class ChunkTransformerMod {
     private static KeyMapping configKey;
     private static final Random RANDOM = new Random();
     private static final Set<Long> transformedChunks = new HashSet<>();
+    private static final Map<String, Set<Long>> worldTransformedChunks = new ConcurrentHashMap<>();
+    private static String currentWorldId = null;
     private ChunkPos lastChunkPos = null;
     private static boolean saveChunkTransformations = false;
     private static final Path CHUNK_SAVE_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_chunks.json");
     private static final Path TRANSFORMED_CHUNKS_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_transformed_chunks.json");
     private static final Path PERFORMANCE_CONFIG_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_performance.json");
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+    private static Path getWorldSpecificTransformedChunksPath(String worldId) {
+        return FMLPaths.CONFIGDIR.get().resolve("chunktransformer_transformed_chunks_" + worldId + ".json");
+    }
+
+    // Add method to get current world identifier
+    private static String getWorldIdentifier(Level level) {
+        if (level == null) {
+            return "unknown_world";
+        }
+
+        try {
+            if (level.isClientSide()) {
+                // For client side, use a simpler approach
+                return "client_world_" + System.currentTimeMillis() % 10000; // Add some uniqueness
+            }
+
+            // For server worlds, use the world's save folder name + dimension
+            if (level.getServer() != null) {
+                String saveName = level.getServer().getWorldPath(null).getFileName().toString();
+                String dimensionName = level.dimension().location().toString();
+                return saveName + "_" + dimensionName.replace(":", "_");
+            } else {
+                // Fallback if server is not available yet
+                return "server_world_" + level.dimension().location().toString().replace(":", "_");
+            }
+        } catch (Exception e) {
+            LOGGER.warn("Failed to get world identifier, using fallback", e);
+            return "fallback_world_" + System.currentTimeMillis() % 10000;
+        }
+    }
 
     // Performance optimization fields - now configurable
     private static final ScheduledExecutorService ASYNC_EXECUTOR = Executors.newScheduledThreadPool(2);
@@ -118,16 +150,35 @@ public class ChunkTransformerMod {
         saveChunkTransformations = !saveChunkTransformations;
         saveChunkSaveConfig();
 
-        // Load transformed chunks when enabling, clear when disabling
         if (saveChunkTransformations) {
-            loadTransformedChunks();
+            // Load transformed chunks for current world when enabling
+            if (currentWorldId != null) {
+                try {
+                    loadTransformedChunksForWorld(currentWorldId);
+                } catch (Exception e) {
+                    LOGGER.error("Failed to load transformed chunks for current world", e);
+                }
+            }
         } else {
-            transformedChunks.clear();
-            // Delete the transformed chunks file when disabling
+            // Clear all world chunks and delete files when disabling
+            worldTransformedChunks.clear();
+
+            // Delete all world-specific transformed chunk files
             try {
-                Files.deleteIfExists(TRANSFORMED_CHUNKS_PATH);
+                Path configDir = FMLPaths.CONFIGDIR.get();
+                if (Files.exists(configDir)) {
+                    Files.list(configDir)
+                            .filter(path -> path.getFileName().toString().startsWith("chunktransformer_transformed_chunks_"))
+                            .forEach(path -> {
+                                try {
+                                    Files.deleteIfExists(path);
+                                } catch (IOException e) {
+                                    LOGGER.error("Failed to delete transformed chunks file: " + path, e);
+                                }
+                            });
+                }
             } catch (IOException e) {
-                LOGGER.error("Failed to delete transformed chunks file", e);
+                LOGGER.error("Failed to list config directory for cleanup", e);
             }
         }
     }
@@ -199,17 +250,29 @@ public class ChunkTransformerMod {
 
     // Load transformed chunks from file
     private static void loadTransformedChunks() {
-        if (!saveChunkTransformations) return;
-
-        if (Files.exists(TRANSFORMED_CHUNKS_PATH)) {
-            try (Reader reader = Files.newBufferedReader(TRANSFORMED_CHUNKS_PATH)) {
-                Set<Long> loadedChunks = GSON.fromJson(reader, new TypeToken<Set<Long>>(){}.getType());
-                if (loadedChunks != null) {
-                    transformedChunks.addAll(loadedChunks);
-                }
-            } catch (IOException e) {
+        if (currentWorldId != null) {
+            try {
+                loadTransformedChunksForWorld(currentWorldId);
+            } catch (Exception e) {
                 LOGGER.error("Failed to load transformed chunks", e);
             }
+        }
+    }
+
+    // Safer method to handle world changes
+    public static void onWorldChanged(Level newWorld) {
+        if (newWorld == null) return;
+
+        try {
+            String newWorldId = getWorldIdentifier(newWorld);
+            if (!newWorldId.equals(currentWorldId)) {
+                currentWorldId = newWorldId;
+                if (saveChunkTransformations) {
+                    loadTransformedChunksForWorld(newWorldId);
+                }
+            }
+        } catch (Exception e) {
+            LOGGER.error("Error handling world change", e);
         }
     }
 
@@ -273,20 +336,39 @@ public class ChunkTransformerMod {
     public void onPlayerRespawn(PlayerEvent.PlayerRespawnEvent event) {
         // Reset lastChunkPos when player respawns
         lastChunkPos = null;
+
+        // Handle potential world change safely
+        try {
+            if (event.getEntity() != null && !event.getEntity().level().isClientSide()) {
+                onWorldChanged(event.getEntity().level());
+            }
+        } catch (Exception e) {
+            LOGGER.error("Error handling player respawn world change", e);
+        }
     }
 
     @SubscribeEvent
     public void onPlayerTick(TickEvent.PlayerTickEvent event) {
         if (event.phase != TickEvent.Phase.END) return;
+        if (event.player == null || event.player.level() == null) return;
         if (event.player.level().isClientSide()) return; // Only process on server side
 
-        Player player = event.player;
-        ChunkPos currentChunkPos = new ChunkPos(player.blockPosition());
+        try {
+            Player player = event.player;
+            ChunkPos currentChunkPos = new ChunkPos(player.blockPosition());
 
-        // Check if player moved to a new chunk
-        if (!currentChunkPos.equals(lastChunkPos)) {
-            handleChunkEnter(player, currentChunkPos);
-            lastChunkPos = currentChunkPos;
+            // Ensure world tracking is initialized
+            if (currentWorldId == null) {
+                onWorldChanged(player.level());
+            }
+
+            // Check if player moved to a new chunk
+            if (!currentChunkPos.equals(lastChunkPos)) {
+                handleChunkEnter(player, currentChunkPos);
+                lastChunkPos = currentChunkPos;
+            }
+        } catch (Exception e) {
+            LOGGER.error("Error in player tick event", e);
         }
     }
 
@@ -313,45 +395,119 @@ public class ChunkTransformerMod {
     }
 
     private void transformSingleChunk(Player player, ChunkPos chunkPos) {
+        if (player == null || player.level() == null) {
+            return;
+        }
+
+        Level level = player.level();
+        String worldId;
+
+        try {
+            worldId = getWorldIdentifier(level);
+        } catch (Exception e) {
+            LOGGER.error("Failed to get world identifier, skipping chunk transformation", e);
+            return;
+        }
+
+        // Update current world if it changed
+        if (!worldId.equals(currentWorldId)) {
+            currentWorldId = worldId;
+            // Load transformed chunks for this world if saving is enabled
+            if (saveChunkTransformations) {
+                try {
+                    loadTransformedChunksForWorld(worldId);
+                } catch (Exception e) {
+                    LOGGER.error("Failed to load transformed chunks for world: " + worldId, e);
+                }
+            }
+        }
+
         long chunkPosLong = chunkPos.toLong();
 
-        // If saving is disabled, always reset transformation
+        // Get or create the set for current world
+        Set<Long> currentWorldChunks = worldTransformedChunks.computeIfAbsent(worldId, k -> ConcurrentHashMap.newKeySet());
+
+        // If saving is disabled, clear only current world's chunks
         if (!saveChunkTransformations) {
-            transformedChunks.clear();
+            currentWorldChunks.clear();
         }
 
         // Check if chunk was already transformed or is being processed
-        if (transformedChunks.contains(chunkPosLong) || PROCESSING_CHUNKS.contains(chunkPosLong)) {
+        if (currentWorldChunks.contains(chunkPosLong) || PROCESSING_CHUNKS.contains(chunkPosLong)) {
             return;
         }
 
         // Add chunk to transformed list immediately to prevent double-processing
-        transformedChunks.add(chunkPosLong);
+        currentWorldChunks.add(chunkPosLong);
 
-        // Get the level and chunk
-        Level level = player.level();
-        LevelChunk chunk = level.getChunk(chunkPos.x, chunkPos.z);
+        try {
+            // Get the chunk
+            LevelChunk chunk = level.getChunk(chunkPos.x, chunkPos.z);
 
-        // Pre-calculate valid blocks (cache this if possible)
-        List<Block> validBlocks = getValidBlocks(level);
-        if (validBlocks.isEmpty()) return;
+            // Pre-calculate valid blocks (cache this if possible)
+            List<Block> validBlocks = getValidBlocks(level);
+            if (validBlocks.isEmpty()) return;
 
-        // Randomly select a block
-        Block randomBlock = validBlocks.get(RANDOM.nextInt(validBlocks.size()));
-        BlockState newBlockState = randomBlock.defaultBlockState();
+            // Randomly select a block
+            Block randomBlock = validBlocks.get(RANDOM.nextInt(validBlocks.size()));
+            BlockState newBlockState = randomBlock.defaultBlockState();
 
-        // Process chunk based on optimization settings
-        if (optimizationsEnabled) {
-            // Queue the chunk for async processing
-            TRANSFORM_QUEUE.offer(new ChunkTransformTask(chunk, newBlockState, chunkPosLong));
-        } else {
-            // Process immediately without optimizations
-            transformChunkImmediate(chunk, newBlockState);
+            // Process chunk based on optimization settings
+            if (optimizationsEnabled) {
+                // Queue the chunk for async processing
+                TRANSFORM_QUEUE.offer(new ChunkTransformTask(chunk, newBlockState, chunkPosLong));
+            } else {
+                // Process immediately without optimizations
+                transformChunkImmediate(chunk, newBlockState);
+            }
+
+            // Save transformed chunks if saving is enabled
+            if (saveChunkTransformations) {
+                try {
+                    saveTransformedChunksForWorld(worldId);
+                } catch (Exception e) {
+                    LOGGER.error("Failed to save transformed chunks for world: " + worldId, e);
+                }
+            }
+        } catch (Exception e) {
+            LOGGER.error("Error during chunk transformation", e);
+            // Remove from transformed list if transformation failed
+            currentWorldChunks.remove(chunkPosLong);
         }
+    }
 
-        // Save transformed chunks if saving is enabled
-        if (saveChunkTransformations) {
-            saveTransformedChunks();
+    private static void saveTransformedChunksForWorld(String worldId) {
+        if (!saveChunkTransformations || worldId == null) return;
+
+        Set<Long> chunksToSave = worldTransformedChunks.get(worldId);
+        if (chunksToSave == null || chunksToSave.isEmpty()) return;
+
+        try {
+            Path worldSpecificPath = getWorldSpecificTransformedChunksPath(worldId);
+            Files.createDirectories(worldSpecificPath.getParent());
+            try (Writer writer = Files.newBufferedWriter(worldSpecificPath)) {
+                GSON.toJson(chunksToSave, writer);
+            }
+        } catch (IOException e) {
+            LOGGER.error("Failed to save transformed chunks for world: " + worldId, e);
+        }
+    }
+
+
+    private static void loadTransformedChunksForWorld(String worldId) {
+        if (!saveChunkTransformations || worldId == null) return;
+
+        Path worldSpecificPath = getWorldSpecificTransformedChunksPath(worldId);
+        if (Files.exists(worldSpecificPath)) {
+            try (Reader reader = Files.newBufferedReader(worldSpecificPath)) {
+                Set<Long> loadedChunks = GSON.fromJson(reader, new TypeToken<Set<Long>>(){}.getType());
+                if (loadedChunks != null) {
+                    worldTransformedChunks.put(worldId, ConcurrentHashMap.newKeySet());
+                    worldTransformedChunks.get(worldId).addAll(loadedChunks);
+                }
+            } catch (IOException e) {
+                LOGGER.error("Failed to load transformed chunks for world: " + worldId, e);
+            }
         }
     }
 

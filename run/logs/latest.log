@@ -1,50 +1,50 @@
-[22Juni2025 02:59:47.826] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_client, --version, MOD_DEV, --assetIndex, 12, --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --gameDir, .]
-[22Juni2025 02:59:47.858] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 17.0.10+11-LTS-240
-[22Juni2025 02:59:47.858] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.2 starting: java version 17.0.10 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[22Juni2025 02:59:48.030] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[22Juni2025 02:59:48.214] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[22Juni2025 02:59:48.321] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[22Juni2025 02:59:48.504] [EarlyDisplay/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Graphics GL version 4.6.0 Core Profile Context 23.19.14.08.240820, ATI Technologies Inc.
-[22Juni2025 02:59:48.539] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=CLIENT
-[22Juni2025 02:59:50.471] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[22Juni2025 02:59:52.750] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_client' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --assetIndex, 12]
-[22Juni2025 02:59:53.495] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.properties file on the classpath: [jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties]
-[22Juni2025 02:59:53.863] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.architecture.properties file on the classpath: [jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties]
-[22Juni2025 02:59:59.069] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 198 Datafixer optimizations took 211 milliseconds
-[22Juni2025 03:00:02.016] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.21_mapped_official_1.20.4/forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[22Juni2025 03:00:02.017] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.21_mapped_official_1.20.4/forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/data/.mcassetsroot' uses unexpected schema
-[22Juni2025 03:00:02.093] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[22Juni2025 03:00:02.111] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[22Juni2025 03:00:02.280] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.2+13
-[22Juni2025 03:00:02.808] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 49.1.21, for MC 1.20.4 with MCP 20231207.112700
-[22Juni2025 03:00:02.811] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v49.1.21 Initialized
-[22Juni2025 03:00:02.932] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[22Juni2025 03:00:04.619] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [chunktransformer]
-[22Juni2025 03:00:04.833] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[22Juni2025 03:00:05.088] [Worker-Main-5/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.04.hex, loading
-[22Juni2025 03:00:05.103] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[22Juni2025 03:00:06.088] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 49.1.21 Target: 49.2.0
-[22Juni2025 03:00:08.891] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[22Juni2025 03:00:08.893] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[22Juni2025 03:00:08.893] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.generic.wind_burst
-[22Juni2025 03:00:08.969] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speaker (Realtek(R) Audio)
-[22Juni2025 03:00:08.972] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[22Juni2025 03:00:09.105] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[22Juni2025 03:00:09.116] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[22Juni2025 03:00:09.116] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[22Juni2025 03:00:09.116] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[22Juni2025 03:00:09.119] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[22Juni2025 03:00:09.131] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[22Juni2025 03:00:09.131] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[22Juni2025 03:00:09.131] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[22Juni2025 03:00:09.132] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[22Juni2025 03:00:09.532] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[22Juni2025 03:00:09.632] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[22Juni2025 03:00:09.634] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[22Juni2025 03:00:09.634] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[22Juni2025 03:00:09.635] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[22Juni2025 03:00:10.003] [IO-Worker-1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
-[22Juni2025 03:00:10.003] [IO-Worker-1/ERROR] [com.mojang.realmsclient.RealmsAvailability/]: Couldn't connect to realms
+[22Juni2025 19:07:25.344] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_client, --version, MOD_DEV, --assetIndex, 12, --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --gameDir, .]
+[22Juni2025 19:07:25.348] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 17.0.10+11-LTS-240
+[22Juni2025 19:07:25.353] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.2 starting: java version 17.0.10 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[22Juni2025 19:07:25.532] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[22Juni2025 19:07:25.713] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[22Juni2025 19:07:25.833] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[22Juni2025 19:07:26.012] [EarlyDisplay/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Graphics GL version 4.6.0 Core Profile Context 23.19.14.08.240820, ATI Technologies Inc.
+[22Juni2025 19:07:26.066] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=CLIENT
+[22Juni2025 19:07:28.133] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[22Juni2025 19:07:30.470] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_client' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --assetIndex, 12]
+[22Juni2025 19:07:31.477] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.properties file on the classpath: [jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties]
+[22Juni2025 19:07:31.883] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.architecture.properties file on the classpath: [jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties]
+[22Juni2025 19:07:37.608] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 198 Datafixer optimizations took 234 milliseconds
+[22Juni2025 19:07:40.724] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.21_mapped_official_1.20.4/forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[22Juni2025 19:07:40.725] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.21_mapped_official_1.20.4/forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/data/.mcassetsroot' uses unexpected schema
+[22Juni2025 19:07:40.814] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22Juni2025 19:07:40.830] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[22Juni2025 19:07:41.029] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.2+13
+[22Juni2025 19:07:42.032] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 49.1.21, for MC 1.20.4 with MCP 20231207.112700
+[22Juni2025 19:07:42.032] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v49.1.21 Initialized
+[22Juni2025 19:07:42.145] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[22Juni2025 19:07:43.549] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [chunktransformer]
+[22Juni2025 19:07:43.808] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[22Juni2025 19:07:44.064] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[22Juni2025 19:07:44.073] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.04.hex, loading
+[22Juni2025 19:07:45.097] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 49.1.21 Target: 49.2.0
+[22Juni2025 19:07:47.867] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[22Juni2025 19:07:47.867] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[22Juni2025 19:07:47.868] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.generic.wind_burst
+[22Juni2025 19:07:48.444] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speaker (Realtek(R) Audio)
+[22Juni2025 19:07:48.445] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[22Juni2025 19:07:48.613] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[22Juni2025 19:07:48.628] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[22Juni2025 19:07:48.628] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[22Juni2025 19:07:48.629] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[22Juni2025 19:07:48.632] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[22Juni2025 19:07:48.645] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[22Juni2025 19:07:48.645] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[22Juni2025 19:07:48.646] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[22Juni2025 19:07:48.646] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[22Juni2025 19:07:49.114] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[22Juni2025 19:07:49.224] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[22Juni2025 19:07:49.226] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[22Juni2025 19:07:49.226] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[22Juni2025 19:07:49.227] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[22Juni2025 19:07:49.508] [IO-Worker-1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[22Juni2025 19:07:49.509] [IO-Worker-1/ERROR] [com.mojang.realmsclient.RealmsAvailability/]: Couldn't connect to realms
 com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: 0'
 	at com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:447) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
 	at com.mojang.realmsclient.client.RealmsClient.clientCompatible(RealmsClient.java:232) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
@@ -53,57 +53,330 @@ com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication 
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
 	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 03:00:18.761] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[22Juni2025 03:00:21.061] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[22Juni2025 03:00:21.296] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1271 advancements
-[22Juni2025 03:00:21.902] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.4
-[22Juni2025 03:00:21.902] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[22Juni2025 03:00:23.238] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[22Juni2025 03:00:26.069] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:26.110] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:26.110] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:26.110] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:26.151] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:26.171] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:26.247] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:26.756] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:27.248] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 03:00:27.755] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 33%
-[22Juni2025 03:00:28.251] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 85%
-[22Juni2025 03:00:28.398] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 5155 ms
-[22Juni2025 03:00:28.406] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[22Juni2025 03:00:28.785] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
-[22Juni2025 03:00:28.785] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
-[22Juni2025 03:00:29.974] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
-[22Juni2025 03:00:30.212] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:914dcb0e] logged in with entity id 236 at (-139.85975426458694, 107.91336292794321, -103.44941193553302)
-[22Juni2025 03:00:30.327] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[22Juni2025 03:00:30.667] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 20 advancements
-[22Juni2025 03:00:34.512] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2003ms or 40 ticks behind
-[22Juni2025 03:00:37.883] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[22Juni2025 03:00:37.937] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22Juni2025 03:00:39.363] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22Juni2025 03:00:39.375] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22Juni2025 03:00:59.513] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2505ms or 50 ticks behind
-[22Juni2025 03:01:09.209] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[22Juni2025 03:01:09.220] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22Juni2025 03:01:09.234] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22Juni2025 03:01:09.241] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22Juni2025 03:01:27.736] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2077ms or 41 ticks behind
-[22Juni2025 03:01:43.508] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[22Juni2025 03:01:43.525] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22Juni2025 03:01:43.549] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22Juni2025 03:01:43.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22Juni2025 03:01:44.188] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[22Juni2025 03:01:44.188] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[22Juni2025 03:01:44.202] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[22Juni2025 03:01:44.212] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[22Juni2025 03:01:44.212] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[22Juni2025 03:01:44.214] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[22Juni2025 03:01:44.815] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22Juni2025 03:01:45.727] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22Juni2025 03:01:45.731] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22Juni2025 03:01:45.753] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
-[22Juni2025 03:01:45.754] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22Juni2025 03:01:45.754] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22Juni2025 03:01:45.754] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[22Juni2025 03:01:47.357] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[22Juni2025 19:07:58.485] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[22Juni2025 19:08:00.632] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[22Juni2025 19:08:00.866] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1271 advancements
+[22Juni2025 19:08:01.467] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.4
+[22Juni2025 19:08:01.467] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[22Juni2025 19:08:02.752] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:06.288] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:06.288] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:06.288] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:06.757] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[22Juni2025 19:08:07.264] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 1%
+[22Juni2025 19:08:07.770] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 31%
+[22Juni2025 19:08:08.258] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 85%
+[22Juni2025 19:08:08.344] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[22Juni2025 19:08:08.355] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 5600 ms
+[22Juni2025 19:08:08.640] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[22Juni2025 19:08:08.641] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
+[22Juni2025 19:08:09.598] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
+[22Juni2025 19:08:09.769] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:e45dd822] logged in with entity id 1326 at (-139.3721201541938, 74.09751040646087, -14.3687365198887)
+[22Juni2025 19:08:09.859] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[22Juni2025 19:08:10.145] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onWorldChanged(ChunkTransformerMod.java:267) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:362) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:10.170] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:10.359] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:10.457] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:10.574] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:10.654] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:10.743] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:10.782] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:11.019] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:11.086] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
+	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
+	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[22Juni2025 19:08:11.298] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 29 advancements
+[22Juni2025 19:08:11.412] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2717ms or 54 ticks behind
+[22Juni2025 19:08:17.339] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[22Juni2025 19:08:17.371] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[22Juni2025 19:08:18.322] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[22Juni2025 19:08:18.332] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[22Juni2025 19:08:46.596] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[22Juni2025 19:08:46.612] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[22Juni2025 19:08:46.637] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[22Juni2025 19:08:46.642] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[22Juni2025 19:08:47.026] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[22Juni2025 19:08:47.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[22Juni2025 19:08:47.043] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[22Juni2025 19:08:47.075] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[22Juni2025 19:08:47.076] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[22Juni2025 19:08:47.076] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[22Juni2025 19:08:47.651] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[22Juni2025 19:08:48.478] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[22Juni2025 19:08:48.482] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[22Juni2025 19:08:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[22Juni2025 19:08:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22Juni2025 19:08:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22Juni2025 19:08:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[22Juni2025 19:08:50.575] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
