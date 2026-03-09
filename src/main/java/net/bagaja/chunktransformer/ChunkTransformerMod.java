@@ -52,11 +52,11 @@ public class ChunkTransformerMod {
     private static final Path TRANSFORMED_CHUNKS_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_transformed_chunks.json");
     private static final Path PERFORMANCE_CONFIG_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_performance.json");
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+
     private static Path getWorldSpecificTransformedChunksPath(String worldId) {
         return FMLPaths.CONFIGDIR.get().resolve("chunktransformer_transformed_chunks_" + worldId + ".json");
     }
 
-    // Add method to get current world identifier
     private static String getWorldIdentifier(Level level) {
         if (level == null) {
             return "unknown_world";
@@ -64,17 +64,16 @@ public class ChunkTransformerMod {
 
         try {
             if (level.isClientSide()) {
-                // For client side, use a simpler approach
-                return "client_world_" + System.currentTimeMillis() % 10000; // Add some uniqueness
+                return "client_world_" + System.currentTimeMillis() % 10000;
             }
 
-            // For server worlds, use the world's save folder name + dimension
             if (level.getServer() != null) {
-                String saveName = level.getServer().getWorldPath(null).getFileName().toString();
+                // 1.20.6: level.getServer().getWorldPath() requires a LevelResource parameter.
+                // Use the dimension key for a reliable unique identifier instead.
                 String dimensionName = level.dimension().location().toString();
-                return saveName + "_" + dimensionName.replace(":", "_");
+                String serverHash = String.valueOf(level.getServer().hashCode() % 100000);
+                return "world_" + serverHash + "_" + dimensionName.replace(":", "_");
             } else {
-                // Fallback if server is not available yet
                 return "server_world_" + level.dimension().location().toString().replace(":", "_");
             }
         } catch (Exception e) {
@@ -83,7 +82,7 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Performance optimization fields - now configurable
+    // Performance optimization fields
     private static final ScheduledExecutorService ASYNC_EXECUTOR = Executors.newScheduledThreadPool(2);
     private static final Queue<ChunkTransformTask> TRANSFORM_QUEUE = new ConcurrentLinkedQueue<>();
     private static final Set<Long> PROCESSING_CHUNKS = ConcurrentHashMap.newKeySet();
@@ -92,7 +91,7 @@ public class ChunkTransformerMod {
     private static boolean optimizationsEnabled = true;
     private static int maxBlocksPerTick = 500;
     private static int chunksPerSecond = 2;
-    private static int transformRadius = 0; // 0 = current chunk only, 1 = 3x3, 2 = 5x5, etc.
+    private static int transformRadius = 0;
 
     private static class ChunkTransformTask {
         final LevelChunk chunk;
@@ -106,52 +105,35 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Performance configuration getters and setters
-    public static boolean isOptimizationsEnabled() {
-        return optimizationsEnabled;
-    }
-
+    public static boolean isOptimizationsEnabled() { return optimizationsEnabled; }
     public static void setOptimizationsEnabled(boolean enabled) {
         optimizationsEnabled = enabled;
         savePerformanceConfig();
     }
 
-    public static int getMaxBlocksPerTick() {
-        return maxBlocksPerTick;
-    }
-
+    public static int getMaxBlocksPerTick() { return maxBlocksPerTick; }
     public static void setMaxBlocksPerTick(int maxBlocks) {
         maxBlocksPerTick = Math.max(1, Math.min(10000, maxBlocks));
         savePerformanceConfig();
     }
 
-    public static int getChunksPerSecond() {
-        return chunksPerSecond;
-    }
-
+    public static int getChunksPerSecond() { return chunksPerSecond; }
     public static void setChunksPerSecond(int chunks) {
         chunksPerSecond = Math.max(1, Math.min(20, chunks));
         savePerformanceConfig();
-        // Restart the async processor with new rate
-        restartAsyncProcessor();
     }
 
-    public static int getTransformRadius() {
-        return transformRadius;
-    }
-
+    public static int getTransformRadius() { return transformRadius; }
     public static void setTransformRadius(int radius) {
         transformRadius = Math.max(0, Math.min(10, radius));
         savePerformanceConfig();
     }
 
-    // Method to toggle save configuration
     public static void toggleSaveChunkTransformations() {
         saveChunkTransformations = !saveChunkTransformations;
         saveChunkSaveConfig();
 
         if (saveChunkTransformations) {
-            // Load transformed chunks for current world when enabling
             if (currentWorldId != null) {
                 try {
                     loadTransformedChunksForWorld(currentWorldId);
@@ -160,10 +142,7 @@ public class ChunkTransformerMod {
                 }
             }
         } else {
-            // Clear all world chunks and delete files when disabling
             worldTransformedChunks.clear();
-
-            // Delete all world-specific transformed chunk files
             try {
                 Path configDir = FMLPaths.CONFIGDIR.get();
                 if (Files.exists(configDir)) {
@@ -183,12 +162,10 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Method to check if chunk transformations should be saved
     public static boolean shouldSaveChunkTransformations() {
         return saveChunkTransformations;
     }
 
-    // Save performance configuration
     private static void savePerformanceConfig() {
         try {
             Files.createDirectories(PERFORMANCE_CONFIG_PATH.getParent());
@@ -205,7 +182,6 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Load performance configuration
     private static void loadPerformanceConfig() {
         if (Files.exists(PERFORMANCE_CONFIG_PATH)) {
             try (Reader reader = Files.newBufferedReader(PERFORMANCE_CONFIG_PATH)) {
@@ -222,7 +198,6 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Save chunk save configuration
     private static void saveChunkSaveConfig() {
         try {
             Files.createDirectories(CHUNK_SAVE_PATH.getParent());
@@ -234,10 +209,8 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Save transformed chunks to file
     private static void saveTransformedChunks() {
         if (!saveChunkTransformations) return;
-
         try {
             Files.createDirectories(TRANSFORMED_CHUNKS_PATH.getParent());
             try (Writer writer = Files.newBufferedWriter(TRANSFORMED_CHUNKS_PATH)) {
@@ -248,7 +221,6 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Load transformed chunks from file
     private static void loadTransformedChunks() {
         if (currentWorldId != null) {
             try {
@@ -259,10 +231,8 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Safer method to handle world changes
     public static void onWorldChanged(Level newWorld) {
         if (newWorld == null) return;
-
         try {
             String newWorldId = getWorldIdentifier(newWorld);
             if (!newWorldId.equals(currentWorldId)) {
@@ -276,7 +246,6 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Load chunk save configuration
     private static void loadChunkSaveConfig() {
         if (Files.exists(CHUNK_SAVE_PATH)) {
             try (Reader reader = Files.newBufferedReader(CHUNK_SAVE_PATH)) {
@@ -288,24 +257,15 @@ public class ChunkTransformerMod {
         }
     }
 
-    // Restart async processor with new settings
-    private static void restartAsyncProcessor() {
-        // The executor will automatically use the new chunksPerSecond value
-        // No need to restart the entire executor
-    }
-
     public ChunkTransformerMod() {
-        // Initialize the key mapping
         configKey = new KeyMapping(
                 "key.chunktransformer.config",
                 GLFW.GLFW_KEY_K,
                 "key.categories.misc"
         );
 
-        // Load configurations
         loadPerformanceConfig();
         loadChunkSaveConfig();
-        // Load previously transformed chunks if saving is enabled
         loadTransformedChunks();
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -313,7 +273,6 @@ public class ChunkTransformerMod {
         startAsyncChunkProcessor();
     }
 
-    // Register the key mapping on the MOD event bus
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
@@ -334,10 +293,7 @@ public class ChunkTransformerMod {
 
     @SubscribeEvent
     public void onPlayerRespawn(PlayerEvent.PlayerRespawnEvent event) {
-        // Reset lastChunkPos when player respawns
         lastChunkPos = null;
-
-        // Handle potential world change safely
         try {
             if (event.getEntity() != null && !event.getEntity().level().isClientSide()) {
                 onWorldChanged(event.getEntity().level());
@@ -351,18 +307,16 @@ public class ChunkTransformerMod {
     public void onPlayerTick(TickEvent.PlayerTickEvent event) {
         if (event.phase != TickEvent.Phase.END) return;
         if (event.player == null || event.player.level() == null) return;
-        if (event.player.level().isClientSide()) return; // Only process on server side
+        if (event.player.level().isClientSide()) return;
 
         try {
             Player player = event.player;
             ChunkPos currentChunkPos = new ChunkPos(player.blockPosition());
 
-            // Ensure world tracking is initialized
             if (currentWorldId == null) {
                 onWorldChanged(player.level());
             }
 
-            // Check if player moved to a new chunk
             if (!currentChunkPos.equals(lastChunkPos)) {
                 handleChunkEnter(player, currentChunkPos);
                 lastChunkPos = currentChunkPos;
@@ -373,7 +327,6 @@ public class ChunkTransformerMod {
     }
 
     private void startAsyncChunkProcessor() {
-        // Process queued chunks at a controlled rate
         ASYNC_EXECUTOR.scheduleAtFixedRate(() -> {
             ChunkTransformTask task = TRANSFORM_QUEUE.poll();
             if (task != null && !PROCESSING_CHUNKS.contains(task.chunkPos)) {
@@ -384,20 +337,15 @@ public class ChunkTransformerMod {
     }
 
     private void handleChunkEnter(Player player, ChunkPos chunkPos) {
-        // Transform chunks in radius around the player
         if (transformRadius == 0) {
-            // Only transform current chunk
             transformSingleChunk(player, chunkPos);
         } else {
-            // Transform chunks in radius
             transformChunksInRadius(player, transformRadius);
         }
     }
 
     private void transformSingleChunk(Player player, ChunkPos chunkPos) {
-        if (player == null || player.level() == null) {
-            return;
-        }
+        if (player == null || player.level() == null) return;
 
         Level level = player.level();
         String worldId;
@@ -409,10 +357,8 @@ public class ChunkTransformerMod {
             return;
         }
 
-        // Update current world if it changed
         if (!worldId.equals(currentWorldId)) {
             currentWorldId = worldId;
-            // Load transformed chunks for this world if saving is enabled
             if (saveChunkTransformations) {
                 try {
                     loadTransformedChunksForWorld(worldId);
@@ -423,45 +369,32 @@ public class ChunkTransformerMod {
         }
 
         long chunkPosLong = chunkPos.toLong();
-
-        // Get or create the set for current world
         Set<Long> currentWorldChunks = worldTransformedChunks.computeIfAbsent(worldId, k -> ConcurrentHashMap.newKeySet());
 
-        // If saving is disabled, clear only current world's chunks
         if (!saveChunkTransformations) {
             currentWorldChunks.clear();
         }
 
-        // Check if chunk was already transformed or is being processed
         if (currentWorldChunks.contains(chunkPosLong) || PROCESSING_CHUNKS.contains(chunkPosLong)) {
             return;
         }
 
-        // Add chunk to transformed list immediately to prevent double-processing
         currentWorldChunks.add(chunkPosLong);
 
         try {
-            // Get the chunk
             LevelChunk chunk = level.getChunk(chunkPos.x, chunkPos.z);
-
-            // Pre-calculate valid blocks (cache this if possible)
             List<Block> validBlocks = getValidBlocks(level);
             if (validBlocks.isEmpty()) return;
 
-            // Randomly select a block
             Block randomBlock = validBlocks.get(RANDOM.nextInt(validBlocks.size()));
             BlockState newBlockState = randomBlock.defaultBlockState();
 
-            // Process chunk based on optimization settings
             if (optimizationsEnabled) {
-                // Queue the chunk for async processing
                 TRANSFORM_QUEUE.offer(new ChunkTransformTask(chunk, newBlockState, chunkPosLong));
             } else {
-                // Process immediately without optimizations
                 transformChunkImmediate(chunk, newBlockState);
             }
 
-            // Save transformed chunks if saving is enabled
             if (saveChunkTransformations) {
                 try {
                     saveTransformedChunksForWorld(worldId);
@@ -471,7 +404,6 @@ public class ChunkTransformerMod {
             }
         } catch (Exception e) {
             LOGGER.error("Error during chunk transformation", e);
-            // Remove from transformed list if transformation failed
             currentWorldChunks.remove(chunkPosLong);
         }
     }
@@ -493,7 +425,6 @@ public class ChunkTransformerMod {
         }
     }
 
-
     private static void loadTransformedChunksForWorld(String worldId) {
         if (!saveChunkTransformations || worldId == null) return;
 
@@ -513,7 +444,7 @@ public class ChunkTransformerMod {
 
     private static List<Block> cachedValidBlocks = null;
     private static long lastValidBlocksUpdate = 0;
-    private static final long VALID_BLOCKS_CACHE_TIME = 30000; // 30 seconds
+    private static final long VALID_BLOCKS_CACHE_TIME = 30000;
 
     private List<Block> getValidBlocks(Level level) {
         long currentTime = System.currentTimeMillis();
@@ -537,19 +468,15 @@ public class ChunkTransformerMod {
     private void processChunkAsync(ChunkTransformTask task) {
         CompletableFuture.runAsync(() -> {
             try {
-                // Process chunk in smaller batches to avoid lag
                 transformChunkOptimized(task.chunk, task.targetBlockState);
             } finally {
-                // Remove from processing set when done
                 PROCESSING_CHUNKS.remove(task.chunkPos);
             }
         }, ASYNC_EXECUTOR);
     }
 
-    // Immediate transformation without optimizations (for high-end PCs)
     private void transformChunkImmediate(LevelChunk chunk, BlockState targetBlockState) {
         Level level = chunk.getLevel();
-
         for (int x = 0; x < 16; x++) {
             for (int z = 0; z < 16; z++) {
                 for (int y = level.getMinBuildHeight(); y < level.getMaxBuildHeight(); y++) {
@@ -558,16 +485,8 @@ public class ChunkTransformerMod {
                             y,
                             chunk.getPos().z * 16 + z
                     );
-
                     BlockState currentState = level.getBlockState(pos);
-                    Block currentBlock = currentState.getBlock();
-
-                    // Skip if the block should not be transformed
-                    if (shouldSkipBlock(currentBlock, currentState)) {
-                        continue;
-                    }
-
-                    // Set block immediately
+                    if (shouldSkipBlock(currentState.getBlock(), currentState)) continue;
                     level.setBlock(pos, targetBlockState, Block.UPDATE_ALL);
                 }
             }
@@ -576,8 +495,6 @@ public class ChunkTransformerMod {
 
     private void transformChunkOptimized(LevelChunk chunk, BlockState targetBlockState) {
         Level level = chunk.getLevel();
-
-        // Pre-collect all positions that need to be changed
         List<BlockPos> positionsToChange = new ArrayList<>();
 
         for (int x = 0; x < 16; x++) {
@@ -588,21 +505,13 @@ public class ChunkTransformerMod {
                             y,
                             chunk.getPos().z * 16 + z
                     );
-
                     BlockState currentState = level.getBlockState(pos);
-                    Block currentBlock = currentState.getBlock();
-
-                    // Skip if the block should not be transformed
-                    if (shouldSkipBlock(currentBlock, currentState)) {
-                        continue;
-                    }
-
+                    if (shouldSkipBlock(currentState.getBlock(), currentState)) continue;
                     positionsToChange.add(pos);
                 }
             }
         }
 
-        // Process positions in batches on the main thread
         processBatchedBlockUpdates(level, positionsToChange, targetBlockState);
     }
 
@@ -621,7 +530,6 @@ public class ChunkTransformerMod {
     private void processBatchedBlockUpdates(Level level, List<BlockPos> positions, BlockState targetBlockState) {
         if (positions.isEmpty()) return;
 
-        // Process blocks in batches spread across multiple ticks
         int batchSize = Math.min(maxBlocksPerTick, positions.size());
         int totalBatches = (int) Math.ceil((double) positions.size() / batchSize);
 
@@ -631,50 +539,39 @@ public class ChunkTransformerMod {
             final int endIndex = Math.min(startIndex + batchSize, positions.size());
             final List<BlockPos> batchPositions = positions.subList(startIndex, endIndex);
 
-            // Schedule each batch to run on the main thread with a slight delay
             ASYNC_EXECUTOR.schedule(() -> {
-                // Ensure we're on the main thread for block updates
-                level.getServer().execute(() -> {
+                Objects.requireNonNull(level.getServer()).execute(() -> {
                     for (BlockPos pos : batchPositions) {
-                        // Use more efficient block setting with minimal updates
                         level.setBlock(pos, targetBlockState, Block.UPDATE_CLIENTS);
                     }
-
-                    // Only do neighbor updates for the last batch to reduce lag
                     if (batchIndex == totalBatches - 1) {
                         for (BlockPos pos : batchPositions) {
                             level.blockUpdated(pos, targetBlockState.getBlock());
                         }
                     }
                 });
-            }, batch * 50, TimeUnit.MILLISECONDS); // 50ms delay between batches
+            }, batch * 50L, TimeUnit.MILLISECONDS);
         }
     }
 
-    // Enhanced chunk processing with radius support
     public void transformChunksInRadius(Player player, int radius) {
         ChunkPos playerChunk = new ChunkPos(player.blockPosition());
 
         for (int x = -radius; x <= radius; x++) {
             for (int z = -radius; z <= radius; z++) {
                 ChunkPos chunkPos = new ChunkPos(playerChunk.x + x, playerChunk.z + z);
-
-                // Delay each chunk to spread the load
                 int delay = optimizationsEnabled ? (Math.abs(x) + Math.abs(z)) * 100 : 0;
 
                 if (delay > 0) {
-                    ASYNC_EXECUTOR.schedule(() -> {
-                        transformSingleChunk(player, chunkPos);
-                    }, delay, TimeUnit.MILLISECONDS);
+                    ASYNC_EXECUTOR.schedule(() -> transformSingleChunk(player, chunkPos),
+                            delay, TimeUnit.MILLISECONDS);
                 } else {
-                    // Process immediately if optimizations are disabled
                     transformSingleChunk(player, chunkPos);
                 }
             }
         }
     }
 
-    // Cleanup method - call this when the mod is unloading
     public static void shutdown() {
         if (ASYNC_EXECUTOR != null && !ASYNC_EXECUTOR.isShutdown()) {
             ASYNC_EXECUTOR.shutdown();

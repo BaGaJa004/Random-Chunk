@@ -1,382 +1,623 @@
-[22Juni2025 19:07:25.344] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_client, --version, MOD_DEV, --assetIndex, 12, --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --gameDir, .]
-[22Juni2025 19:07:25.348] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 17.0.10+11-LTS-240
-[22Juni2025 19:07:25.353] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.2 starting: java version 17.0.10 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[22Juni2025 19:07:25.532] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[22Juni2025 19:07:25.713] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[22Juni2025 19:07:25.833] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[22Juni2025 19:07:26.012] [EarlyDisplay/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Graphics GL version 4.6.0 Core Profile Context 23.19.14.08.240820, ATI Technologies Inc.
-[22Juni2025 19:07:26.066] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=CLIENT
-[22Juni2025 19:07:28.133] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[22Juni2025 19:07:30.470] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_client' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --assetIndex, 12]
-[22Juni2025 19:07:31.477] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.properties file on the classpath: [jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties]
-[22Juni2025 19:07:31.883] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.architecture.properties file on the classpath: [jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties]
-[22Juni2025 19:07:37.608] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 198 Datafixer optimizations took 234 milliseconds
-[22Juni2025 19:07:40.724] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.21_mapped_official_1.20.4/forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[22Juni2025 19:07:40.725] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.21_mapped_official_1.20.4/forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/data/.mcassetsroot' uses unexpected schema
-[22Juni2025 19:07:40.814] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[22Juni2025 19:07:40.830] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[22Juni2025 19:07:41.029] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.2+13
-[22Juni2025 19:07:42.032] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 49.1.21, for MC 1.20.4 with MCP 20231207.112700
-[22Juni2025 19:07:42.032] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v49.1.21 Initialized
-[22Juni2025 19:07:42.145] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[22Juni2025 19:07:43.549] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [chunktransformer]
-[22Juni2025 19:07:43.808] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[22Juni2025 19:07:44.064] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[22Juni2025 19:07:44.073] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.04.hex, loading
-[22Juni2025 19:07:45.097] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 49.1.21 Target: 49.2.0
-[22Juni2025 19:07:47.867] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[22Juni2025 19:07:47.867] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[22Juni2025 19:07:47.868] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.generic.wind_burst
-[22Juni2025 19:07:48.444] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speaker (Realtek(R) Audio)
-[22Juni2025 19:07:48.445] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[22Juni2025 19:07:48.613] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[22Juni2025 19:07:48.628] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[22Juni2025 19:07:48.628] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[22Juni2025 19:07:48.629] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[22Juni2025 19:07:48.632] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[22Juni2025 19:07:48.645] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[22Juni2025 19:07:48.645] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[22Juni2025 19:07:48.646] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[22Juni2025 19:07:48.646] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[22Juni2025 19:07:49.114] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[22Juni2025 19:07:49.224] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[22Juni2025 19:07:49.226] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[22Juni2025 19:07:49.226] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[22Juni2025 19:07:49.227] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[22Juni2025 19:07:49.508] [IO-Worker-1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
-[22Juni2025 19:07:49.509] [IO-Worker-1/ERROR] [com.mojang.realmsclient.RealmsAvailability/]: Couldn't connect to realms
-com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: 0'
-	at com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:447) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at com.mojang.realmsclient.client.RealmsClient.clientCompatible(RealmsClient.java:232) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at com.mojang.realmsclient.RealmsAvailability.lambda$check$0(RealmsAvailability.java:45) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:07:58.485] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[22Juni2025 19:08:00.632] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[22Juni2025 19:08:00.866] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1271 advancements
-[22Juni2025 19:08:01.467] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.4
-[22Juni2025 19:08:01.467] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[22Juni2025 19:08:02.752] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:06.287] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:06.288] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:06.288] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:06.288] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:06.757] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[22Juni2025 19:08:07.264] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 1%
-[22Juni2025 19:08:07.770] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 31%
-[22Juni2025 19:08:08.258] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 85%
-[22Juni2025 19:08:08.344] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[22Juni2025 19:08:08.355] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 5600 ms
-[22Juni2025 19:08:08.640] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
-[22Juni2025 19:08:08.641] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
-[22Juni2025 19:08:09.598] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
-[22Juni2025 19:08:09.769] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:e45dd822] logged in with entity id 1326 at (-139.3721201541938, 74.09751040646087, -14.3687365198887)
-[22Juni2025 19:08:09.859] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[22Juni2025 19:08:10.145] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onWorldChanged(ChunkTransformerMod.java:267) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:362) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:10.170] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:10.359] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:10.457] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:10.574] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:10.654] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:10.743] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:10.782] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:11.019] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:11.086] [Server thread/WARN] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Failed to get world identifier, using fallback
-java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.storage.LevelResource.getId()" because "p_230855_" is null
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelDirectory.resourcePath(LevelStorageSource.java:404) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.getLevelPath(LevelStorageSource.java:442) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.getWorldPath(MinecraftServer.java:1761) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.getWorldIdentifier(ChunkTransformerMod.java:73) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:406) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.transformChunksInRadius(ChunkTransformerMod.java:671) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.handleChunkEnter(ChunkTransformerMod.java:393) ~[main/:?]
-	at net.bagaja.chunktransformer.ChunkTransformerMod.onPlayerTick(ChunkTransformerMod.java:367) ~[main/:?]
-	at net.bagaja.chunktransformer.__ChunkTransformerMod_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:48) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:304) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:290) ~[eventbus-6.2.8.jar!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.post(ForgeEventFactory.java:161) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:726) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%231!/:?]
-	at net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:473) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:253) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.network.Connection.tick(Connection.java:369) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:148) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:963) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:837) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:93) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:673) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:256) ~[forge-1.20.4-49.1.21_mapped_official_1.20.4.jar%230!/:?]
-	at java.lang.Thread.run(Thread.java:842) ~[?:?]
-[22Juni2025 19:08:11.298] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 29 advancements
-[22Juni2025 19:08:11.412] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2717ms or 54 ticks behind
-[22Juni2025 19:08:17.339] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[22Juni2025 19:08:17.371] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22Juni2025 19:08:18.322] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22Juni2025 19:08:18.332] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22Juni2025 19:08:46.596] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[22Juni2025 19:08:46.612] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22Juni2025 19:08:46.637] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22Juni2025 19:08:46.642] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22Juni2025 19:08:47.026] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[22Juni2025 19:08:47.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[22Juni2025 19:08:47.043] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[22Juni2025 19:08:47.075] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[22Juni2025 19:08:47.076] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[22Juni2025 19:08:47.076] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[22Juni2025 19:08:47.651] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22Juni2025 19:08:48.478] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22Juni2025 19:08:48.482] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22Juni2025 19:08:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
-[22Juni2025 19:08:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22Juni2025 19:08:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22Juni2025 19:08:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[22Juni2025 19:08:50.575] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[09März2026 21:14:20.663] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_client, --version, MOD_DEV, --assetIndex, 16, --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --gameDir, .]
+[09März2026 21:14:20.684] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[09März2026 21:14:20.684] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[09März2026 21:14:20.843] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file C:\Coding\Minecraft Code Mods\Chunk Randomizer\run\config\fml.toml is not correct. Correcting
+[09März2026 21:14:20.847] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [detectNonForgeModsToml] was corrected from true to null
+[09März2026 21:14:20.864] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[09März2026 21:14:21.026] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[09März2026 21:14:21.202] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[09März2026 21:14:21.419] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=CLIENT
+[09März2026 21:14:21.649] [EarlyDisplay/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Graphics GL version 4.6.0 Core Profile Context 25.8.1.250617, ATI Technologies Inc.
+[09März2026 21:14:22.968] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[09März2026 21:14:24.387] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_client' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --assetIndex, 16]
+[09März2026 21:14:25.434] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.properties file on the classpath: [jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar!/oshi.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar!/oshi.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar!/oshi.properties]
+[09März2026 21:14:26.008] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.architecture.properties file on the classpath: [jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar!/oshi.architecture.properties, jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar!/oshi.architecture.properties, jar:file:/C:/Users/snikl/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar!/oshi.architecture.properties]
+[09März2026 21:14:26.085] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[09März2026 21:14:32.122] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 222 Datafixer optimizations took 526 milliseconds
+[09März2026 21:14:35.321] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.2.4_mapped_official_1.20.6/forge-1.20.6-50.2.4_mapped_official_1.20.6.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[09März2026 21:14:35.323] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.2.4_mapped_official_1.20.6/forge-1.20.6-50.2.4_mapped_official_1.20.6.jar%230!/data/.mcassetsroot' uses unexpected schema
+[09März2026 21:14:35.413] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[09März2026 21:14:35.444] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[09März2026 21:14:35.748] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[09März2026 21:14:36.385] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 50.2.4, for MC 1.20.6 with MCP 20240429.135109
+[09März2026 21:14:36.386] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v50.2.4 Initialized
+[09März2026 21:14:36.422] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[09März2026 21:14:37.565] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [chunktransformer]
+[09März2026 21:14:37.799] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[09März2026 21:14:37.834] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Coding\Minecraft Code Mods\Chunk Randomizer\run\config\forge-client.toml is not correct. Correcting
+[09März2026 21:14:37.836] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.compressLanIPv6Addresses was corrected from true to its default, null. 
+[09März2026 21:14:38.058] [Worker-Main-4/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.04.hex, loading
+[09März2026 21:14:38.172] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[09März2026 21:14:38.200] [Worker-Main-9/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.04.hex, loading
+[09März2026 21:14:39.028] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 50.2.4 Target: null
+[09März2026 21:14:41.877] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[09März2026 21:14:41.877] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[09März2026 21:14:43.151] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speaker (Realtek(R) Audio)
+[09März2026 21:14:43.152] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[09März2026 21:14:43.337] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[09März2026 21:14:43.354] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[09März2026 21:14:43.354] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[09März2026 21:14:43.357] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[09März2026 21:14:43.362] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[09März2026 21:14:43.379] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[09März2026 21:14:43.379] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[09März2026 21:14:43.380] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[09März2026 21:14:43.381] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[09März2026 21:14:43.713] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[09März2026 21:14:43.716] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09März2026 21:14:43.716] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[09März2026 21:14:43.717] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[09März2026 21:14:43.718] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[09März2026 21:14:43.830] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[09März2026 21:14:54.487] [Render thread/WARN] [net.minecraftforge.common.ForgeHooks/WP]: The following mods have version differences that were not resolved:
+chunktransformer (version 1.1.0 -> 2.0.1)
+forge (version 49.1.21 -> 50.2.4)
+Things may not work well.
+[09März2026 21:14:54.543] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09März2026 21:14:54.621] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment: Found a missing id from the world minecraft:sweeping
+[09März2026 21:14:54.738] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world minecraft:scute
+[09März2026 21:14:54.775] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion: Found a missing id from the world minecraft:empty
+[09März2026 21:14:54.872] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world minecraft:entity.generic.wind_burst
+[09März2026 21:14:54.962] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:enchantment
+	minecraft:sweeping: 19
+
+[09März2026 21:14:54.965] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:item
+	minecraft:scute: 794
+
+[09März2026 21:14:54.966] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:potion
+	minecraft:empty: 0
+
+[09März2026 21:14:54.966] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:sound_event
+	minecraft:entity.generic.wind_burst: 1466
+
+[09März2026 21:14:54.969] [Render thread/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Forge Mod Loader detected missing registry entries.
+
+There are 4 missing entries in this save.
+If you continue the missing entries will get removed.
+A world backup will be automatically created in your saves directory.
+
+
+[09März2026 21:14:54.969] [Render thread/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Missing minecraft:sound_event:
+    minecraft:entity.generic.wind_burst
+
+Missing minecraft:item:
+    minecraft:scute
+
+Missing minecraft:potion:
+    minecraft:empty
+
+Missing minecraft:enchantment:
+    minecraft:sweeping
+
+
+[09März2026 21:14:54.969] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: There are unidentified mappings in this world - we are going to attempt to process anyway
+[09März2026 21:14:54.981] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:heavy_core Expected: 85 Got: 1312
+[09März2026 21:14:54.981] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:turtle_scute Expected: 795 Got: 1313
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:armadillo_scute Expected: 796 Got: 1314
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:wolf_armor Expected: 797 Got: 1315
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:armadillo_spawn_egg Expected: 1008 Got: 1316
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:bogged_spawn_egg Expected: 1014 Got: 1317
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:wind_charge Expected: 1090 Got: 1318
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:mace Expected: 1093 Got: 1319
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:flow_banner_pattern Expected: 1198 Got: 1320
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:guster_banner_pattern Expected: 1199 Got: 1321
+[09März2026 21:14:54.983] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:flow_armor_trim_smithing_template Expected: 1283 Got: 1322
+[09März2026 21:14:54.984] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:bolt_armor_trim_smithing_template Expected: 1284 Got: 1323
+[09März2026 21:14:54.984] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:flow_pottery_sherd Expected: 1293 Got: 1324
+[09März2026 21:14:54.984] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:guster_pottery_sherd Expected: 1295 Got: 1325
+[09März2026 21:14:54.984] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:scrape_pottery_sherd Expected: 1303 Got: 1326
+[09März2026 21:14:54.984] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:ominous_trial_key Expected: 1326 Got: 1327
+[09März2026 21:14:54.985] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:vault Expected: 1327 Got: 1328
+[09März2026 21:14:54.985] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:ominous_bottle Expected: 1328 Got: 1329
+[09März2026 21:14:54.985] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: minecraft:breeze_rod Expected: 1329 Got: 1330
+[09März2026 21:14:54.987] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.eat Expected: 54 Got: 1539
+[09März2026 21:14:54.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.hurt Expected: 55 Got: 1540
+[09März2026 21:14:54.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.hurt_reduced Expected: 56 Got: 1541
+[09März2026 21:14:54.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.ambient Expected: 57 Got: 1542
+[09März2026 21:14:54.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.step Expected: 58 Got: 1543
+[09März2026 21:14:54.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.death Expected: 59 Got: 1544
+[09März2026 21:14:54.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.roll Expected: 60 Got: 1545
+[09März2026 21:14:54.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.land Expected: 61 Got: 1546
+[09März2026 21:14:54.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.scute_drop Expected: 62 Got: 1547
+[09März2026 21:14:54.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.unroll_finish Expected: 63 Got: 1548
+[09März2026 21:14:54.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.peek Expected: 64 Got: 1549
+[09März2026 21:14:54.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.unroll_start Expected: 65 Got: 1550
+[09März2026 21:14:54.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.armadillo.brush Expected: 66 Got: 1551
+[09März2026 21:14:54.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.armor.equip_wolf Expected: 76 Got: 1552
+[09März2026 21:14:54.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.armor.unequip_wolf Expected: 77 Got: 1553
+[09März2026 21:14:54.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.bogged.ambient Expected: 169 Got: 1554
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.bogged.death Expected: 170 Got: 1555
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.bogged.hurt Expected: 171 Got: 1556
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.bogged.shear Expected: 172 Got: 1557
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.bogged.step Expected: 173 Got: 1558
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.breeze.charge Expected: 186 Got: 1559
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.breeze.deflect Expected: 187 Got: 1560
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.breeze.whirl Expected: 197 Got: 1561
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.breeze.wind_burst Expected: 198 Got: 1562
+[09März2026 21:14:54.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.cobweb.break Expected: 320 Got: 1563
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.cobweb.step Expected: 321 Got: 1564
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.cobweb.place Expected: 322 Got: 1565
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.cobweb.hit Expected: 323 Got: 1566
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.cobweb.fall Expected: 324 Got: 1567
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.donkey.jump Expected: 427 Got: 1568
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.heavy_core.break Expected: 658 Got: 1569
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.heavy_core.fall Expected: 659 Got: 1570
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.heavy_core.hit Expected: 660 Got: 1571
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.heavy_core.place Expected: 661 Got: 1572
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.heavy_core.step Expected: 662 Got: 1573
+[09März2026 21:14:54.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.trial_spawner.about_to_spawn_item Expected: 679 Got: 1574
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.trial_spawner.spawn_item Expected: 680 Got: 1575
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.trial_spawner.spawn_item_begin Expected: 681 Got: 1576
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.trial_spawner.charge_activate Expected: 683 Got: 1577
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.trial_spawner.ambient_charged Expected: 685 Got: 1578
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.mace.smash_air Expected: 800 Got: 1579
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.mace.smash_ground Expected: 801 Got: 1580
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.mace.smash_ground_heavy Expected: 802 Got: 1581
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.mule.jump Expected: 867 Got: 1582
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.ominous_bottle.dispose Expected: 1008 Got: 1583
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.parrot.imitate.bogged Expected: 1028 Got: 1584
+[09März2026 21:14:54.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.activate Expected: 1433 Got: 1585
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.ambient Expected: 1434 Got: 1586
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.break Expected: 1435 Got: 1587
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.close_shutter Expected: 1436 Got: 1588
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.deactivate Expected: 1437 Got: 1589
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.eject_item Expected: 1438 Got: 1590
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.fall Expected: 1439 Got: 1591
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.hit Expected: 1440 Got: 1592
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.insert_item Expected: 1441 Got: 1593
+[09März2026 21:14:54.993] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.insert_item_fail Expected: 1442 Got: 1594
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.open_shutter Expected: 1443 Got: 1595
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.place Expected: 1444 Got: 1596
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.vault.step Expected: 1445 Got: 1597
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:block.wet_sponge.dries Expected: 1521 Got: 1598
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.wind_charge.wind_burst Expected: 1526 Got: 1599
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:entity.wind_charge.throw Expected: 1527 Got: 1600
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.wolf_armor.break Expected: 1544 Got: 1601
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.wolf_armor.crack Expected: 1545 Got: 1602
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.wolf_armor.damage Expected: 1546 Got: 1603
+[09März2026 21:14:54.994] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:item.wolf_armor.repair Expected: 1547 Got: 1604
+[09März2026 21:14:54.995] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:event.mob_effect.bad_omen Expected: 1604 Got: 1605
+[09März2026 21:14:54.995] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:event.mob_effect.trial_omen Expected: 1605 Got: 1606
+[09März2026 21:14:54.995] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: minecraft:event.mob_effect.raid_omen Expected: 1606 Got: 1607
+[09März2026 21:14:54.995] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion: Object did not get ID it asked for. Name: minecraft:wind_charged Expected: 42 Got: 43
+[09März2026 21:14:54.995] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion: Object did not get ID it asked for. Name: minecraft:weaving Expected: 43 Got: 44
+[09März2026 21:14:54.996] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion: Object did not get ID it asked for. Name: minecraft:oozing Expected: 44 Got: 45
+[09März2026 21:14:54.996] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion: Object did not get ID it asked for. Name: minecraft:infested Expected: 45 Got: 46
+[09März2026 21:14:54.996] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment: Object did not get ID it asked for. Name: minecraft:sweeping_edge Expected: 19 Got: 39
+[09März2026 21:14:54.996] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment: Object did not get ID it asked for. Name: minecraft:density Expected: 37 Got: 40
+[09März2026 21:14:54.996] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment: Object did not get ID it asked for. Name: minecraft:breach Expected: 38 Got: 41
+[09März2026 21:14:54.996] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment: Object did not get ID it asked for. Name: minecraft:wind_burst Expected: 39 Got: 42
+[09März2026 21:14:54.997] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: minecraft:armadillo Expected: 2 Got: 126
+[09März2026 21:14:54.997] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: minecraft:bogged Expected: 11 Got: 127
+[09März2026 21:14:54.997] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: minecraft:breeze_wind_charge Expected: 13 Got: 128
+[09März2026 21:14:54.997] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: minecraft:ominous_item_spawner Expected: 61 Got: 129
+[09März2026 21:14:55.002] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:memory_module_type: Object did not get ID it asked for. Name: minecraft:danger_detected_recently Expected: 32 Got: 104
+[09März2026 21:14:57.935] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1175 recipes
+[09März2026 21:14:58.242] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1276 advancements
+[09März2026 21:14:59.044] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.6
+[09März2026 21:14:59.045] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[09März2026 21:14:59.161] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World (1)\serverconfig\forge-server.toml is not correct. Correcting
+[09März2026 21:14:59.163] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from 0.1 to its default, null. 
+[09März2026 21:14:59.163] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from 0.05 to its default, null. 
+[09März2026 21:15:00.589] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[09März2026 21:15:02.980] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:03.035] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:03.036] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:03.070] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:03.070] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:03.218] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:04.230] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:04.230] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:04.622] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.440] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.440] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.440] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.440] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.440] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.440] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.440] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:16.441] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:17.216] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:17.216] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:15:17.417] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.417] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.427] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.427] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.445] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.445] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.452] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.452] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.479] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.479] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.484] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.484] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.940] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:15:17.945] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.945] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.982] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.982] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.983] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.984] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:17.998] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:17.998] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.000] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.001] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.022] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.022] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.060] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.060] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.064] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.064] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.065] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.065] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.065] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.066] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.067] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.067] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.068] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.068] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.069] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.069] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.069] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.070] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.070] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.070] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.077] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[09März2026 21:15:18.090] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 17494 ms
+[09März2026 21:15:18.344] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[09März2026 21:15:18.344] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
+[09März2026 21:15:18.350] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.350] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:18.363] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:18.364] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:19.492] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
+[09März2026 21:15:19.608] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:19.608] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:19.613] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:1fb7fa54] logged in with entity id 36 at (-139.3721201541938, 74.09751040646087, -14.3687365198887)
+[09März2026 21:15:19.732] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[09März2026 21:15:20.871] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 29 advancements
+[09März2026 21:15:20.929] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:20.929] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.257] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.257] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.309] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.309] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.312] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.312] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.404] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.404] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.471] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.471] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.489] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.489] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.490] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.491] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.525] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.526] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.527] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.527] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.528] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.528] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.529] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.530] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.530] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.531] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.531] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.531] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.641] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.641] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.665] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.665] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.790] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.791] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.792] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.792] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.793] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.793] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.837] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.838] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.838] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.839] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.891] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.891] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.892] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.892] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.893] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.893] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.893] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.893] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.894] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.894] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.895] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.895] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.895] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.895] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:21.896] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:21.896] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.005] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.006] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.022] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.022] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.031] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.031] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.045] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.045] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.150] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.150] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.264] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.264] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.292] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.292] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.328] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.328] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.331] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.332] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.748] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.749] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.749] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.749] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.749] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.749] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:22.769] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:22.769] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:23.342] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.342] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:23.348] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.348] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:23.458] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.458] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:23.530] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.530] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:23.531] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.531] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:23.532] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.532] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:23.553] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.554] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.554] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:23.598] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:23.598] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:27.013] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:27.036] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4357ms or 87 ticks behind
+[09März2026 21:15:32.468] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:32.468] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:32.881] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:32.881] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:33.240] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:33.240] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:35.771] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:35.771] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:35.772] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:35.772] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:35.772] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:35.772] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:35.790] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:35.790] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:35.790] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:35.791] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:35.791] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:35.791] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:35.791] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:35.791] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:35.798] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:35.798] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:42.337] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:15:42.372] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:15:42.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:15:42.529] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:15:47.127] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:47.127] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:47.136] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:47.136] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:47.145] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:47.145] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:15:47.153] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:entity_gravity'
+[09März2026 21:15:47.153] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:16:07.169] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 3, from 5
+[09März2026 21:16:09.704] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:16:09.723] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:16:10.447] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:16:10.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:16:34.711] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:16:34.711] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'forge:step_height_addition'
+[09März2026 21:16:44.293] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[09März2026 21:16:44.303] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[09März2026 21:16:54.467] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 32 advancements
+[09März2026 21:17:05.403] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:17:05.445] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:17:05.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:17:05.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:17:14.679] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:17:14.696] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:17:14.711] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:17:14.715] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:17:15.278] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[09März2026 21:17:15.279] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[09März2026 21:17:15.303] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[09März2026 21:17:15.323] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09März2026 21:17:15.325] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09März2026 21:17:15.325] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09März2026 21:17:15.742] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:17:15.995] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:17:16.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:17:16.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[09März2026 21:17:16.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09März2026 21:17:16.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09März2026 21:17:16.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[09März2026 21:17:20.648] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Deleting level New World (2)
+[09März2026 21:17:20.649] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Attempt 1...
+[09März2026 21:17:22.472] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Deleting level New World
+[09März2026 21:17:22.472] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Attempt 1...
+[09März2026 21:17:24.243] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09März2026 21:17:26.316] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1175 recipes
+[09März2026 21:17:26.438] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1276 advancements
+[09März2026 21:17:27.082] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.6
+[09März2026 21:17:27.083] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[09März2026 21:17:28.593] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[09März2026 21:17:28.805] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:17:29.113] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:17:29.614] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:17:30.143] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:17:30.615] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 40%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.907] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+[09März2026 21:17:36.916] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[09März2026 21:17:36.925] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 8316 ms
+[09März2026 21:17:36.955] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 3, from 10
+[09März2026 21:17:36.955] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
+[09März2026 21:17:37.084] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
+[09März2026 21:17:37.114] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:c3a322f8] logged in with entity id 4758 at (-62.07562987006628, 69.0, 54.752608300914154)
+[09März2026 21:17:37.152] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[09März2026 21:17:37.392] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 32 advancements
+[09März2026 21:18:00.531] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 33 advancements
+[09März2026 21:18:08.729] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2713ms or 54 ticks behind
+[09März2026 21:18:08.730] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:18:08.772] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:18:08.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:18:08.803] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:18:27.337] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 44 advancements
+[09März2026 21:18:28.137] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4420ms or 88 ticks behind
+[09März2026 21:18:56.417] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:18:56.455] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:18:56.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:18:56.480] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:18:57.008] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[09März2026 21:18:57.009] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[09März2026 21:18:57.044] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[09März2026 21:18:57.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09März2026 21:18:57.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09März2026 21:18:57.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09März2026 21:18:57.425] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:18:57.719] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:18:57.723] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:18:57.750] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[09März2026 21:18:57.750] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09März2026 21:18:57.750] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09März2026 21:18:57.750] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[09März2026 21:19:00.605] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1175 recipes
+[09März2026 21:19:00.689] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1276 advancements
+[09März2026 21:19:02.847] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.6
+[09März2026 21:19:02.848] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[09März2026 21:19:02.886] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World\serverconfig\forge-server.toml is not correct. Correcting
+[09März2026 21:19:02.887] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
+[09März2026 21:19:02.887] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
+[09März2026 21:19:02.887] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[09März2026 21:19:02.888] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[09März2026 21:19:02.888] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
+[09März2026 21:19:02.888] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
+[09März2026 21:19:02.888] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.useItemWithDurationZero was corrected from null to its default, false. 
+[09März2026 21:19:07.237] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[09März2026 21:19:07.291] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[09März2026 21:19:07.744] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[09März2026 21:19:09.146] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[09März2026 21:19:09.165] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[09März2026 21:19:09.246] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[09März2026 21:19:09.742] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[09März2026 21:19:10.244] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 34%
+[09März2026 21:19:10.746] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 59%
+[09März2026 21:19:11.210] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[09März2026 21:19:11.215] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 3, from 10
+[09März2026 21:19:11.216] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
+[09März2026 21:19:11.224] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3986 ms
+[09März2026 21:19:11.395] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
+[09März2026 21:19:11.414] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:8d53d765] logged in with entity id 8367 at (10.5, 65.0, 2.5)
+[09März2026 21:19:11.431] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[09März2026 21:19:12.022] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[09März2026 21:19:17.712] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:19:17.745] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:19:17.763] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:19:17.772] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:19:33.771] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[09März2026 21:19:33.777] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[09März2026 21:19:37.147] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[09März2026 21:19:37.171] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[09März2026 21:19:40.711] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:19:40.746] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:19:40.765] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:19:40.772] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:19:44.292] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[09März2026 21:19:44.297] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[09März2026 21:19:46.529] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3 advancements
+[09März2026 21:20:02.904] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3893ms or 77 ticks behind
+[09März2026 21:20:15.030] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[09März2026 21:20:15.040] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[09März2026 21:20:20.229] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 5 advancements
+[09März2026 21:20:26.077] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 14 advancements
+[09März2026 21:20:39.622] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 15 advancements
+[09März2026 21:20:42.661] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:20:42.677] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:20:42.695] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:20:42.705] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:20:43.218] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[09März2026 21:20:43.218] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[09März2026 21:20:43.234] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[09März2026 21:20:43.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09März2026 21:20:43.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09März2026 21:20:43.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09März2026 21:20:43.787] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:20:45.226] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:20:45.232] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:20:45.266] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[09März2026 21:20:45.266] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09März2026 21:20:45.266] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09März2026 21:20:45.266] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[09März2026 21:20:47.802] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09März2026 21:20:48.962] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1175 recipes
+[09März2026 21:20:49.017] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1276 advancements
+[09März2026 21:20:49.604] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.6
+[09März2026 21:20:49.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[09März2026 21:20:50.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[09März2026 21:20:50.640] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:20:51.034] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09März2026 21:20:51.490] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 46%
+[09März2026 21:20:51.633] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[09März2026 21:20:51.635] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1158 ms
+[09März2026 21:20:51.678] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 3, from 10
+[09März2026 21:20:51.678] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
+[09März2026 21:20:51.858] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
+[09März2026 21:20:51.926] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:5d904400] logged in with entity id 11133 at (113.88187881068512, 71.0, 48.57101311188913)
+[09März2026 21:20:51.939] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[09März2026 21:20:52.024] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 15 advancements
+[09März2026 21:21:00.933] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09März2026 21:21:00.972] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:21:00.990] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:21:00.998] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:21:01.341] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[09März2026 21:21:01.342] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[09März2026 21:21:01.380] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[09März2026 21:21:01.397] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09März2026 21:21:01.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09März2026 21:21:01.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09März2026 21:21:01.752] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09März2026 21:21:02.446] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09März2026 21:21:02.451] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09März2026 21:21:02.484] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[09März2026 21:21:02.484] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09März2026 21:21:02.484] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09März2026 21:21:02.484] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[09März2026 21:21:03.745] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

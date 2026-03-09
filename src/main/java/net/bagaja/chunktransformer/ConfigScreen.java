@@ -8,9 +8,11 @@ import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -18,25 +20,17 @@ public class ConfigScreen extends Screen {
     private final Screen lastScreen;
     private final BlockConfig config;
     private int scrollOffset = 0;
-    private static final int BUTTONS_PER_PAGE = 8; // Reduced to make room for performance options
+    private static final int BUTTONS_PER_PAGE = 8;
     private List<Block> displayedBlocks;
     private EditBox searchBox;
-    private List<Button> blockButtons = new ArrayList<>();
+    private final List<Button> blockButtons = new ArrayList<>();
     private String currentSearchText = "";
-
-    // UI Components
-    private Button selectAllButton;
-    private Button scrollUpButton;
-    private Button scrollDownButton;
-    private Button doneButton;
-    private Button saveConfigButton;
 
     // Performance option components
     private Checkbox enableOptimizationsCheckbox;
     private EditBox maxBlocksPerTickBox;
     private EditBox chunksPerSecondBox;
     private EditBox radiusBox;
-    private Button performancePresetButton;
     private int currentPreset = 1; // 0=Fast, 1=Balanced, 2=Slow
 
     public ConfigScreen(Screen lastScreen, BlockConfig config) {
@@ -77,9 +71,10 @@ public class ConfigScreen extends Screen {
         this.addRenderableWidget(searchBox);
 
         // Enable All button
-        selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
+        // UI Components
+        Button selectAllButton = Button.builder(Component.literal("Enable All Blocks"), button -> {
                     for (Block block : displayedBlocks) {
-                        String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
+                        String blockId = Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).toString();
                         config.getBlockStates().put(blockId, true);
                     }
                     config.save();
@@ -95,13 +90,13 @@ public class ConfigScreen extends Screen {
         addBlockButtons(firstBlockButtonY, leftColumn);
 
         // Scroll buttons for block list
-        scrollUpButton = Button.builder(Component.literal("⬆"), button -> scrollUp())
+        Button scrollUpButton = Button.builder(Component.literal("⬆"), button -> scrollUp())
                 .pos(leftColumn + buttonWidth + 4, firstBlockButtonY)
                 .size(20, 20)
                 .build();
         this.addRenderableWidget(scrollUpButton);
 
-        scrollDownButton = Button.builder(Component.literal("⬇"), button -> scrollDown())
+        Button scrollDownButton = Button.builder(Component.literal("⬇"), button -> scrollDown())
                 .pos(leftColumn + buttonWidth + 4, firstBlockButtonY + (BUTTONS_PER_PAGE - 1) * spacing)
                 .size(20, 20)
                 .build();
@@ -112,7 +107,7 @@ public class ConfigScreen extends Screen {
 
         // Performance preset button
         String[] presetNames = {"Fast PC", "Balanced", "Slow PC"};
-        performancePresetButton = Button.builder(
+        Button performancePresetButton = Button.builder(
                         Component.literal("Preset: " + presetNames[currentPreset]),
                         this::cyclePreset)
                 .pos(rightColumn, rightColumnY)
@@ -122,6 +117,7 @@ public class ConfigScreen extends Screen {
         rightColumnY += spacing;
 
         // Enable optimizations checkbox
+        // 1.20.6: Checkbox.builder(...).pos(...).selected(...).build()
         enableOptimizationsCheckbox = Checkbox.builder(
                         Component.literal("Enable Performance Optimizations"),
                         this.font)
@@ -131,8 +127,8 @@ public class ConfigScreen extends Screen {
         this.addRenderableWidget(enableOptimizationsCheckbox);
         rightColumnY += spacing;
 
-        // Max blocks per tick
-        this.addRenderableWidget(new Button.Builder(Component.literal("Max Blocks/Tick:"), (button) -> {})
+        // Max blocks per tick label + box
+        this.addRenderableWidget(Button.builder(Component.literal("Max Blocks/Tick:"), (button) -> {})
                 .pos(rightColumn, rightColumnY)
                 .size(buttonWidth / 2 - 2, buttonHeight)
                 .build());
@@ -144,8 +140,8 @@ public class ConfigScreen extends Screen {
         this.addRenderableWidget(maxBlocksPerTickBox);
         rightColumnY += spacing;
 
-        // Chunks per second
-        this.addRenderableWidget(new Button.Builder(Component.literal("Chunks/Second:"), (button) -> {})
+        // Chunks per second label + box
+        this.addRenderableWidget(Button.builder(Component.literal("Chunks/Second:"), (button) -> {})
                 .pos(rightColumn, rightColumnY)
                 .size(buttonWidth / 2 - 2, buttonHeight)
                 .build());
@@ -157,8 +153,8 @@ public class ConfigScreen extends Screen {
         this.addRenderableWidget(chunksPerSecondBox);
         rightColumnY += spacing;
 
-        // Transform radius
-        this.addRenderableWidget(new Button.Builder(Component.literal("Transform Radius:"), (button) -> {})
+        // Transform radius label + box
+        this.addRenderableWidget(Button.builder(Component.literal("Transform Radius:"), (button) -> {})
                 .pos(rightColumn, rightColumnY)
                 .size(buttonWidth / 2 - 2, buttonHeight)
                 .build());
@@ -171,7 +167,7 @@ public class ConfigScreen extends Screen {
         rightColumnY += spacing;
 
         // Save Config button
-        saveConfigButton = Button.builder(
+        Button saveConfigButton = Button.builder(
                         Component.literal((ChunkTransformerMod.shouldSaveChunkTransformations() ? "✔ " : "✘ ") + "Save Chunk Transformations"),
                         button -> {
                             ChunkTransformerMod.toggleSaveChunkTransformations();
@@ -191,7 +187,10 @@ public class ConfigScreen extends Screen {
                 .build();
         this.addRenderableWidget(applyButton);
 
-        doneButton = Button.builder(Component.literal("Done"), button -> minecraft.setScreen(lastScreen))
+        Button doneButton = Button.builder(Component.literal("Done"), button -> {
+                    assert minecraft != null;
+                    minecraft.setScreen(lastScreen);
+                })
                 .pos(width / 2 + 4, height - 52)
                 .size(100, 20)
                 .build();
@@ -213,25 +212,21 @@ public class ConfigScreen extends Screen {
         String[] presetNames = {"Fast PC", "Balanced", "Slow PC"};
         button.setMessage(Component.literal("Preset: " + presetNames[currentPreset]));
 
-        // Apply preset values
         switch (currentPreset) {
             case 0: // Fast PC
                 maxBlocksPerTickBox.setValue("2000");
                 chunksPerSecondBox.setValue("5");
                 radiusBox.setValue("1");
-                enableOptimizationsCheckbox.selected();
                 break;
             case 1: // Balanced
                 maxBlocksPerTickBox.setValue("500");
                 chunksPerSecondBox.setValue("2");
                 radiusBox.setValue("1");
-                enableOptimizationsCheckbox.selected();
                 break;
             case 2: // Slow PC
                 maxBlocksPerTickBox.setValue("100");
                 chunksPerSecondBox.setValue("1");
                 radiusBox.setValue("1");
-                enableOptimizationsCheckbox.selected();
                 break;
         }
     }
@@ -262,34 +257,32 @@ public class ConfigScreen extends Screen {
             button.setMessage(Component.literal("Settings Applied!"));
 
             // Reset button text after 2 seconds
-            minecraft.execute(() -> {
-                try {
-                    Thread.sleep(2000);
-                    button.setMessage(Component.literal("Apply Settings"));
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                }
-            });
+            // NOTE: Do NOT use Thread.sleep on the main thread; schedule via a ticker instead.
+            // We store the timestamp and reset in render if enough time has passed.
+            applyButtonResetTime = System.currentTimeMillis() + 2000;
+            applyButtonRef = button;
 
         } catch (NumberFormatException e) {
             button.setMessage(Component.literal("Invalid Numbers!"));
         }
     }
 
+    // Used to reset "Settings Applied!" label after 2 seconds without Thread.sleep
+    private long applyButtonResetTime = 0;
+    private Button applyButtonRef = null;
+
     private void onSearchTextChanged(String searchTerm) {
         currentSearchText = searchTerm;
         displayedBlocks = StreamSupport.stream(ForgeRegistries.BLOCKS.spliterator(), false)
                 .filter(block -> searchTerm.isEmpty() ||
-                        ForgeRegistries.BLOCKS.getKey(block).toString().toLowerCase().contains(searchTerm.toLowerCase()))
+                        Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).toString().toLowerCase().contains(searchTerm.toLowerCase()))
                 .collect(Collectors.toList());
         scrollOffset = 0;
         refreshButtons();
     }
 
     private void refreshButtons() {
-        blockButtons.forEach(button -> {
-            removeWidget(button);
-        });
+        blockButtons.forEach(this::removeWidget);
         blockButtons.clear();
 
         int leftColumn = width / 4 - 200 / 2;
@@ -301,11 +294,10 @@ public class ConfigScreen extends Screen {
         int buttonHeight = 20;
         int spacing = 24;
 
-        // Add block toggle buttons
         int startIndex = scrollOffset * BUTTONS_PER_PAGE;
         for (int i = 0; i < BUTTONS_PER_PAGE && startIndex + i < displayedBlocks.size(); i++) {
             Block block = displayedBlocks.get(startIndex + i);
-            String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
+            String blockId = Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).toString();
             boolean enabled = config.isBlockEnabled(block);
 
             Button blockButton = Button.builder(
@@ -342,6 +334,7 @@ public class ConfigScreen extends Screen {
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
         if (keyCode == GLFW.GLFW_KEY_ESCAPE) {
+            assert minecraft != null;
             minecraft.setScreen(lastScreen);
             return true;
         }
@@ -349,14 +342,22 @@ public class ConfigScreen extends Screen {
     }
 
     @Override
-    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
-        this.renderBackground(graphics);
+    public void render(@NotNull GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
+        // 1.20.6: renderBackground now requires mouseX, mouseY, and partialTicks
+        this.renderBackground(graphics, mouseX, mouseY, partialTicks);
+
+        // Reset "Settings Applied!" button text after 2 seconds
+        if (applyButtonRef != null && applyButtonResetTime > 0 && System.currentTimeMillis() >= applyButtonResetTime) {
+            applyButtonRef.setMessage(Component.literal("Apply Settings"));
+            applyButtonResetTime = 0;
+            applyButtonRef = null;
+        }
 
         // Draw section headers
         graphics.drawString(this.font, "Block Configuration", width / 4 - 100, 8, 0xFFFFFF);
         graphics.drawString(this.font, "Performance Settings", 3 * width / 4 - 100, 8, 0xFFFFFF);
 
-        // Draw the search text mirror label
+        // Draw the search text label
         String labelText = "Search: " + currentSearchText;
         graphics.drawString(this.font, labelText, 5, 5, 0xFFFFFF);
 
@@ -387,13 +388,5 @@ public class ConfigScreen extends Screen {
                 graphics.drawString(this.font, tooltip, mouseX - 100, tooltipY + 5, 0xFFFF55);
             }
         }
-    }
-
-    private void renderBackground(GuiGraphics graphics) {
-        renderDirtBackground(graphics);
-    }
-
-    public void renderDirtBackground(GuiGraphics graphics) {
-        graphics.fillGradient(0, 0, this.width, this.height, 0xC0101010, 0xD0101010);
     }
 }

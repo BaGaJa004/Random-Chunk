@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chunk-randomizer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/chunk-randomizer.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chunk-randomizer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/chunk-randomizer.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.bagaja.chunk-randomizer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.bagaja.chunk-randomizer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.bagaja.chunk-randomizer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.bagaja.chunk-randomizer.test.iml" />
     </modules>
   </component>
 </project>

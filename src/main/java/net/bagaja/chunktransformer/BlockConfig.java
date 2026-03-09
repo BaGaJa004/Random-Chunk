@@ -4,9 +4,10 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FallingBlock;
 import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraft.world.level.block.FallingBlock;
+
 import java.io.*;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
@@ -41,7 +42,7 @@ public class BlockConfig {
     }
 
     public Map<String, Boolean> getBlockStates() {
-        return blockStates; // Return direct reference instead of copy
+        return blockStates;
     }
 
     public void load() {
