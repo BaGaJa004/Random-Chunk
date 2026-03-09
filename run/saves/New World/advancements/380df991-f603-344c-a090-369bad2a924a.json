@@ -7,6 +7,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:stony_shore": "2026-03-09 21:32:38 +0100",
       "minecraft:plains": "2026-03-09 21:19:12 +0100"
     },
     "done": false
@@ -86,6 +87,12 @@
   "minecraft:recipes/building_blocks/sponge": {
     "criteria": {
       "has_wet_sponge": "2026-03-09 21:20:39 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
+    "criteria": {
+      "has_azure_bluet": "2026-03-09 21:33:06 +0100"
     },
     "done": true
   },

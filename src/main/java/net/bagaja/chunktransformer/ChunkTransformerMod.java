@@ -41,7 +41,11 @@ public class ChunkTransformerMod {
     public static final String MODID = "chunktransformer";
     public static final org.slf4j.Logger LOGGER = LogUtils.getLogger();
     private static final BlockConfig blockConfig = new BlockConfig();
-    private static KeyMapping configKey;
+    private static final KeyMapping configKey = new KeyMapping(
+            "key.chunktransformer.config",
+            GLFW.GLFW_KEY_K,
+            "key.categories.misc"
+    );
     private static final Random RANDOM = new Random();
     private static final Set<Long> transformedChunks = new HashSet<>();
     private static final Map<String, Set<Long>> worldTransformedChunks = new ConcurrentHashMap<>();
@@ -258,12 +262,6 @@ public class ChunkTransformerMod {
     }
 
     public ChunkTransformerMod() {
-        configKey = new KeyMapping(
-                "key.chunktransformer.config",
-                GLFW.GLFW_KEY_K,
-                "key.categories.misc"
-        );
-
         loadPerformanceConfig();
         loadChunkSaveConfig();
         loadTransformedChunks();
