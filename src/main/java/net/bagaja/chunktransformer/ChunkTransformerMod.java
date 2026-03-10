@@ -15,12 +15,11 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -37,7 +36,7 @@ import java.util.concurrent.*;
 
 @Mod(ChunkTransformerMod.MODID)
 public class ChunkTransformerMod {
-
+    public static ChunkTransformerMod INSTANCE;
     public static final String MODID = "chunktransformer";
     public static final org.slf4j.Logger LOGGER = LogUtils.getLogger();
     private static final BlockConfig blockConfig = new BlockConfig();
@@ -117,6 +116,7 @@ public class ChunkTransformerMod {
     public static void setChunksPerSecond(int chunks) {
         chunksPerSecond = Math.max(1, Math.min(20, chunks));
         savePerformanceConfig();
+        INSTANCE.startAsyncChunkProcessor(); // restart with new interval
     }
 
     public static int getTransformRadius() { return transformRadius; }
@@ -233,21 +233,21 @@ public class ChunkTransformerMod {
         }
     }
 
-    public ChunkTransformerMod() {
+    public ChunkTransformerMod(FMLJavaModLoadingContext context) {
+        INSTANCE = this;
         loadPerformanceConfig();
         loadChunkSaveConfig();
 
-        MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.addListener(this::onKeyInput);
-        startAsyncChunkProcessor();
-    }
+        // Register each listener directly on its event's bus
+        PlayerEvent.PlayerRespawnEvent.BUS.addListener(this::onPlayerRespawn);
+        TickEvent.PlayerTickEvent.Post.BUS.addListener(this::onPlayerTick);
+        InputEvent.Key.BUS.addListener(this::onKeyInput);
 
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onKeyRegister(RegisterKeyMappingsEvent event) {
-            event.register(configKey);
-        }
+        // Register key mapping on the mod bus
+        RegisterKeyMappingsEvent.getBus(context.getModBusGroup())
+                .addListener(event -> event.register(configKey));
+
+        startAsyncChunkProcessor();
     }
 
     public static BlockConfig getBlockConfig() {
@@ -296,15 +296,22 @@ public class ChunkTransformerMod {
         }
     }
 
+    private ScheduledFuture<?> processorTask = null;
+
     private void startAsyncChunkProcessor() {
-        ASYNC_EXECUTOR.scheduleAtFixedRate(() -> {
+        if (processorTask != null && !processorTask.isCancelled()) {
+            processorTask.cancel(false);
+        }
+        long intervalMs = 1000L / chunksPerSecond; // use long to avoid integer division issues
+        processorTask = ASYNC_EXECUTOR.scheduleAtFixedRate(() -> {
             ChunkTransformTask task = TRANSFORM_QUEUE.poll();
             if (task != null && !PROCESSING_CHUNKS.contains(task.chunkPos)) {
                 PROCESSING_CHUNKS.add(task.chunkPos);
                 processChunkAsync(task);
             }
-        }, 0, 1000 / chunksPerSecond, TimeUnit.MILLISECONDS);
+        }, 0, intervalMs, TimeUnit.MILLISECONDS);
     }
+
 
     private void handleChunkEnter(Player player, ChunkPos chunkPos) {
         if (transformRadius == 0) {
@@ -519,7 +526,8 @@ public class ChunkTransformerMod {
                 }
                 if (batchIndex == totalBatches - 1) {
                     for (BlockPos pos : batchPositions) {
-                        level.blockUpdated(pos, targetBlockState.getBlock());
+                        // CHANGED: level.blockUpdated(pos, block) -> level.updateNeighborsAt(pos, block)
+                        level.updateNeighborsAt(pos, targetBlockState.getBlock());
                     }
                 }
             }), batch * 50L, TimeUnit.MILLISECONDS);

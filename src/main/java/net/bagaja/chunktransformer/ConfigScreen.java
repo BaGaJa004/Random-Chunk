@@ -343,9 +343,6 @@ public class ConfigScreen extends Screen {
 
     @Override
     public void render(@NotNull GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
-        // 1.20.6: renderBackground now requires mouseX, mouseY, and partialTicks
-        this.renderBackground(graphics, mouseX, mouseY, partialTicks);
-
         // Reset "Settings Applied!" button text after 2 seconds
         if (applyButtonRef != null && applyButtonResetTime > 0 && System.currentTimeMillis() >= applyButtonResetTime) {
             applyButtonRef.setMessage(Component.literal("Apply Settings"));
