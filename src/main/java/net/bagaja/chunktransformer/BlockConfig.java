@@ -14,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class BlockConfig {
     private static final Path CONFIG_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_blocks.json");
@@ -23,7 +24,7 @@ public class BlockConfig {
     public BlockConfig() {
         // Initialize with default values
         ForgeRegistries.BLOCKS.forEach(block -> {
-            String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
+            String blockId = Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).toString();
             // By default, enable all blocks except falling blocks
             boolean defaultEnabled = !(block instanceof FallingBlock);
             blockStates.put(blockId, defaultEnabled);
@@ -37,7 +38,7 @@ public class BlockConfig {
     }
 
     public boolean isBlockEnabled(Block block) {
-        String blockId = ForgeRegistries.BLOCKS.getKey(block).toString();
+        String blockId = Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).toString();
         return blockStates.getOrDefault(blockId, true);
     }
 

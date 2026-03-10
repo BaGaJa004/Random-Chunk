@@ -47,13 +47,11 @@ public class ChunkTransformerMod {
             "key.categories.misc"
     );
     private static final Random RANDOM = new Random();
-    private static final Set<Long> transformedChunks = new HashSet<>();
     private static final Map<String, Set<Long>> worldTransformedChunks = new ConcurrentHashMap<>();
     private static String currentWorldId = null;
     private ChunkPos lastChunkPos = null;
     private static boolean saveChunkTransformations = false;
     private static final Path CHUNK_SAVE_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_chunks.json");
-    private static final Path TRANSFORMED_CHUNKS_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_transformed_chunks.json");
     private static final Path PERFORMANCE_CONFIG_PATH = FMLPaths.CONFIGDIR.get().resolve("chunktransformer_performance.json");
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
@@ -62,18 +60,12 @@ public class ChunkTransformerMod {
     }
 
     private static String getWorldIdentifier(Level level) {
-        if (level == null) {
-            return "unknown_world";
-        }
-
+        if (level == null) return "unknown_world";
         try {
             if (level.isClientSide()) {
                 return "client_world_" + System.currentTimeMillis() % 10000;
             }
-
             if (level.getServer() != null) {
-                // 1.20.6: level.getServer().getWorldPath() requires a LevelResource parameter.
-                // Use the dimension key for a reliable unique identifier instead.
                 String dimensionName = level.dimension().location().toString();
                 String serverHash = String.valueOf(level.getServer().hashCode() % 100000);
                 return "world_" + serverHash + "_" + dimensionName.replace(":", "_");
@@ -213,28 +205,6 @@ public class ChunkTransformerMod {
         }
     }
 
-    private static void saveTransformedChunks() {
-        if (!saveChunkTransformations) return;
-        try {
-            Files.createDirectories(TRANSFORMED_CHUNKS_PATH.getParent());
-            try (Writer writer = Files.newBufferedWriter(TRANSFORMED_CHUNKS_PATH)) {
-                GSON.toJson(transformedChunks, writer);
-            }
-        } catch (IOException e) {
-            LOGGER.error("Failed to save transformed chunks", e);
-        }
-    }
-
-    private static void loadTransformedChunks() {
-        if (currentWorldId != null) {
-            try {
-                loadTransformedChunksForWorld(currentWorldId);
-            } catch (Exception e) {
-                LOGGER.error("Failed to load transformed chunks", e);
-            }
-        }
-    }
-
     public static void onWorldChanged(Level newWorld) {
         if (newWorld == null) return;
         try {
@@ -254,7 +224,9 @@ public class ChunkTransformerMod {
         if (Files.exists(CHUNK_SAVE_PATH)) {
             try (Reader reader = Files.newBufferedReader(CHUNK_SAVE_PATH)) {
                 Map<String, Boolean> config = GSON.fromJson(reader, new TypeToken<Map<String, Boolean>>(){}.getType());
-                saveChunkTransformations = config.getOrDefault("saveChunkTransformations", false);
+                if (config != null) {
+                    saveChunkTransformations = config.getOrDefault("saveChunkTransformations", false);
+                }
             } catch (IOException e) {
                 LOGGER.error("Failed to load chunk transformation save configuration", e);
             }
@@ -264,7 +236,6 @@ public class ChunkTransformerMod {
     public ChunkTransformerMod() {
         loadPerformanceConfig();
         loadChunkSaveConfig();
-        loadTransformedChunks();
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(this::onKeyInput);
@@ -303,8 +274,9 @@ public class ChunkTransformerMod {
 
     @SubscribeEvent
     public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+        // In 1.21.3, TickEvent.PlayerTickEvent.Phase was moved; use event.phase directly
         if (event.phase != TickEvent.Phase.END) return;
-        if (event.player == null || event.player.level() == null) return;
+        if (event.player == null) return;
         if (event.player.level().isClientSide()) return;
 
         try {
@@ -343,7 +315,7 @@ public class ChunkTransformerMod {
     }
 
     private void transformSingleChunk(Player player, ChunkPos chunkPos) {
-        if (player == null || player.level() == null) return;
+        if (player == null) return;
 
         Level level = player.level();
         String worldId;
@@ -475,13 +447,15 @@ public class ChunkTransformerMod {
 
     private void transformChunkImmediate(LevelChunk chunk, BlockState targetBlockState) {
         Level level = chunk.getLevel();
+        int minY = level.dimensionType().minY();
+        int maxY = minY + level.dimensionType().height();
         for (int x = 0; x < 16; x++) {
             for (int z = 0; z < 16; z++) {
-                for (int y = level.getMinBuildHeight(); y < level.getMaxBuildHeight(); y++) {
+                for (int y = minY; y < maxY; y++) {
                     BlockPos pos = new BlockPos(
-                            chunk.getPos().x * 16 + x,
+                            chunk.getPos().getMinBlockX() + x,
                             y,
-                            chunk.getPos().z * 16 + z
+                            chunk.getPos().getMinBlockZ() + z
                     );
                     BlockState currentState = level.getBlockState(pos);
                     if (shouldSkipBlock(currentState.getBlock(), currentState)) continue;
@@ -493,15 +467,17 @@ public class ChunkTransformerMod {
 
     private void transformChunkOptimized(LevelChunk chunk, BlockState targetBlockState) {
         Level level = chunk.getLevel();
+        int minY = level.dimensionType().minY();
+        int maxY = minY + level.dimensionType().height();
         List<BlockPos> positionsToChange = new ArrayList<>();
 
         for (int x = 0; x < 16; x++) {
             for (int z = 0; z < 16; z++) {
-                for (int y = level.getMinBuildHeight(); y < level.getMaxBuildHeight(); y++) {
+                for (int y = minY; y < maxY; y++) {
                     BlockPos pos = new BlockPos(
-                            chunk.getPos().x * 16 + x,
+                            chunk.getPos().getMinBlockX() + x,
                             y,
-                            chunk.getPos().z * 16 + z
+                            chunk.getPos().getMinBlockZ() + z
                     );
                     BlockState currentState = level.getBlockState(pos);
                     if (shouldSkipBlock(currentState.getBlock(), currentState)) continue;
@@ -535,20 +511,18 @@ public class ChunkTransformerMod {
             final int batchIndex = batch;
             final int startIndex = batch * batchSize;
             final int endIndex = Math.min(startIndex + batchSize, positions.size());
-            final List<BlockPos> batchPositions = positions.subList(startIndex, endIndex);
+            final List<BlockPos> batchPositions = new ArrayList<>(positions.subList(startIndex, endIndex));
 
-            ASYNC_EXECUTOR.schedule(() -> {
-                Objects.requireNonNull(level.getServer()).execute(() -> {
+            ASYNC_EXECUTOR.schedule(() -> Objects.requireNonNull(level.getServer()).execute(() -> {
+                for (BlockPos pos : batchPositions) {
+                    level.setBlock(pos, targetBlockState, Block.UPDATE_CLIENTS);
+                }
+                if (batchIndex == totalBatches - 1) {
                     for (BlockPos pos : batchPositions) {
-                        level.setBlock(pos, targetBlockState, Block.UPDATE_CLIENTS);
+                        level.blockUpdated(pos, targetBlockState.getBlock());
                     }
-                    if (batchIndex == totalBatches - 1) {
-                        for (BlockPos pos : batchPositions) {
-                            level.blockUpdated(pos, targetBlockState.getBlock());
-                        }
-                    }
-                });
-            }, batch * 50L, TimeUnit.MILLISECONDS);
+                }
+            }), batch * 50L, TimeUnit.MILLISECONDS);
         }
     }
 
@@ -584,5 +558,3 @@ public class ChunkTransformerMod {
         }
     }
 }
-
-// fixing saving for multiple worlds
