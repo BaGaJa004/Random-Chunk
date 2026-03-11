@@ -30,7 +30,7 @@ import org.lwjgl.glfw.GLFW;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
-import java.lang.invoke.MethodHandles;
+import net.minecraft.resources.ResourceKey;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
@@ -69,11 +69,11 @@ public class ChunkTransformerMod {
                 return "client_world_" + System.currentTimeMillis() % 10000;
             }
             if (level.getServer() != null) {
-                String dimensionName = level.dimension().location().toString();
+                String dimensionName = level.dimension().identifier().toString();
                 String serverHash = String.valueOf(level.getServer().hashCode() % 100000);
                 return "world_" + serverHash + "_" + dimensionName.replace(":", "_");
             } else {
-                return "server_world_" + level.dimension().location().toString().replace(":", "_");
+                return "server_world_" + level.dimension().identifier().toString().replace(":", "_");
             }
         } catch (Exception e) {
             LOGGER.warn("Failed to get world identifier, using fallback", e);

@@ -8,10 +8,8 @@ import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
-import org.lwjgl.glfw.GLFW;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -26,6 +24,7 @@ public class ConfigScreen extends Screen {
     private List<Block> displayedBlocks;
     private EditBox searchBox;
     private final List<Button> blockButtons = new ArrayList<>();
+    private int leftColumn;
     private String currentSearchText = "";
 
     // Performance option components
@@ -55,7 +54,7 @@ public class ConfigScreen extends Screen {
         int buttonWidth = 200;
         int buttonHeight = 20;
         int spacing = 24;
-        int leftColumn = width / 4 - buttonWidth / 2;
+        leftColumn = width / 4 - buttonWidth / 2;
         int rightColumn = 3 * width / 4 - buttonWidth / 2;
 
         // Preserve the search box text
@@ -67,9 +66,10 @@ public class ConfigScreen extends Screen {
         searchBox.setMaxLength(50);
         searchBox.setValue(previousSearch);
         searchBox.setResponder(this::onSearchTextChanged);
-        searchBox.setTextColor(0xFFFFFF);
+        searchBox.setTextColor(0xFFFFFFFF);
         searchBox.setBordered(true);
         searchBox.setFocused(true);
+        this.setFocused(searchBox);
         this.addRenderableWidget(searchBox);
 
         // Enable All button
@@ -190,7 +190,6 @@ public class ConfigScreen extends Screen {
         this.addRenderableWidget(applyButton);
 
         Button doneButton = Button.builder(Component.literal("Done"), button -> {
-                    assert minecraft != null;
                     minecraft.setScreen(lastScreen);
                 })
                 .pos(width / 2 + 4, height - 52)
@@ -336,7 +335,6 @@ public class ConfigScreen extends Screen {
     @Override
     public boolean keyPressed(net.minecraft.client.input.KeyEvent event) {
         if (event.key() == InputConstants.KEY_ESCAPE) {
-            assert minecraft != null;
             minecraft.setScreen(lastScreen);
             return true;
         }
@@ -357,8 +355,7 @@ public class ConfigScreen extends Screen {
         graphics.drawString(this.font, "Performance Settings", 3 * width / 4 - 100, 8, 0xFFFFFF);
 
         // Draw the search text label
-        String labelText = "Search: " + currentSearchText;
-        graphics.drawString(this.font, labelText, 5, 5, 0xFFFFFF);
+        graphics.drawString(this.font, "Search:", leftColumn, 14, 0xFFFFFF);
 
         super.render(graphics, mouseX, mouseY, partialTicks);
 
