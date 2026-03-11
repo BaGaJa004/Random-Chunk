@@ -1,230 +1,361 @@
-[10März2026 01:57:53.949] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_client, --version, MOD_DEV, --assetIndex, 26, --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --gameDir, .]
-[10März2026 01:57:53.953] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
-[10März2026 01:57:53.954] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[10März2026 01:57:54.102] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[10März2026 01:57:54.332] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[10März2026 01:57:54.458] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[10März2026 01:57:54.679] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=CLIENT
-[10März2026 01:57:54.896] [EarlyDisplay/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Graphics GL version 4.6.0 Core Profile Context 25.8.1.250617, ATI Technologies Inc.
-[10März2026 01:57:56.253] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[10März2026 01:57:57.828] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_client' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --assetIndex, 26]
-[10März2026 01:58:00.116] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 269 Datafixer optimizations took 781 milliseconds
-[10März2026 01:58:00.199] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
-[10März2026 01:58:07.259] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:root
-[10März2026 01:58:07.259] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:sound_event
-[10März2026 01:58:07.260] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:fluid
-[10März2026 01:58:07.260] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:particle_type
-[10März2026 01:58:07.261] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:attribute
-[10März2026 01:58:07.262] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:mob_effect
-[10März2026 01:58:07.262] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:block
-[10März2026 01:58:07.263] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_effect_component_type
-[10März2026 01:58:07.263] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_score_provider_type
-[10März2026 01:58:07.263] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_number_provider_type
-[10März2026 01:58:07.264] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:map_decoration_type
-[10März2026 01:58:07.264] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_pool_entry_type
-[10März2026 01:58:07.264] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_nbt_provider_type
-[10März2026 01:58:07.265] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_function_type
-[10März2026 01:58:07.265] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:data_component_type
-[10März2026 01:58:07.266] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:entity_type
-[10März2026 01:58:07.266] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:item
-[10März2026 01:58:07.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:game_event
-[10März2026 01:58:07.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:potion
-[10März2026 01:58:07.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:block_entity_type
-[10März2026 01:58:07.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:stat_type
-[10März2026 01:58:07.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:custom_stat
-[10März2026 01:58:07.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:chunk_status
-[10März2026 01:58:07.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:rule_test
-[10März2026 01:58:07.268] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:rule_block_entity_modifier
-[10März2026 01:58:07.268] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:pos_rule_test
-[10März2026 01:58:07.268] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:menu
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:recipe_type
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:recipe_serializer
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:position_source_type
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:command_argument_type
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:villager_type
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:villager_profession
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:point_of_interest_type
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:memory_module_type
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:sensor_type
-[10März2026 01:58:07.269] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:activity
-[10März2026 01:58:07.270] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:schedule
-[10März2026 01:58:07.270] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_condition_type
-[10März2026 01:58:07.270] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:float_provider_type
-[10März2026 01:58:07.270] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:int_provider_type
-[10März2026 01:58:07.270] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:height_provider_type
-[10März2026 01:58:07.270] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:block_predicate_type
-[10März2026 01:58:07.271] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/carver
-[10März2026 01:58:07.273] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_processor
-[10März2026 01:58:07.273] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/feature
-[10März2026 01:58:07.274] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_placement
-[10März2026 01:58:07.274] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_piece
-[10März2026 01:58:07.274] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_type
-[10März2026 01:58:07.274] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/placement_modifier_type
-[10März2026 01:58:07.274] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/block_state_provider_type
-[10März2026 01:58:07.274] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/foliage_placer_type
-[10März2026 01:58:07.274] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/trunk_placer_type
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/root_placer_type
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/tree_decorator_type
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/feature_size_type
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/biome_source
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/chunk_generator
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/material_condition
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/material_rule
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/density_function_type
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:block_type
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_pool_element
-[10März2026 01:58:07.275] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/pool_alias_binding
-[10März2026 01:58:07.278] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:decorated_pot_pattern
-[10März2026 01:58:07.278] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:creative_mode_tab
-[10März2026 01:58:07.278] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:trigger_type
-[10März2026 01:58:07.278] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:number_format_type
-[10März2026 01:58:07.278] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:entity_sub_predicate_type
-[10März2026 01:58:07.278] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:data_component_predicate_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_level_based_value_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_entity_effect_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_location_based_effect_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_value_effect_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_provider_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:consume_effect_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:recipe_display
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:slot_display
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:recipe_book_category
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:ticket_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:test_environment_definition_type
-[10März2026 01:58:07.279] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:test_instance_type
-[10März2026 01:58:07.280] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:spawn_condition_type
-[10März2026 01:58:07.280] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:dialog_type
-[10März2026 01:58:07.282] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:dialog_action_type
-[10März2026 01:58:07.282] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:input_control_type
-[10März2026 01:58:07.282] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:dialog_body_type
-[10März2026 01:58:07.283] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:test_function
-[10März2026 01:58:07.899] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.6-56.0.9_mapped_official_1.21.6/forge-1.21.6-56.0.9_mapped_official_1.21.6.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[10März2026 01:58:07.902] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.6-56.0.9_mapped_official_1.21.6/forge-1.21.6-56.0.9_mapped_official_1.21.6.jar%230!/data/.mcassetsroot' uses unexpected schema
-[10März2026 01:58:07.985] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[10März2026 01:58:07.998] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[10März2026 01:58:08.248] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[10März2026 01:58:08.463] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access
-[10März2026 01:58:08.693] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 56.0.9, for MC 1.21.6 with MCP 20250618.020446
-[10März2026 01:58:08.700] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v56.0.9 Initialized
-[10März2026 01:58:08.749] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[10März2026 01:58:10.154] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[10März2026 01:58:10.405] [Worker-Main-9/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-16.0.03.hex, loading
-[10März2026 01:58:10.405] [Worker-Main-10/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-16.0.03.hex, loading
-[10März2026 01:58:10.576] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-16.0.03.hex, loading
-[10März2026 01:58:10.600] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[10März2026 01:58:11.766] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: BETA Current: 56.0.9 Target: 56.0.9
-[10März2026 01:58:13.765] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speaker (Realtek(R) Audio)
-[10März2026 01:58:13.768] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[10März2026 01:58:13.938] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[10März2026 01:58:13.953] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[10März2026 01:58:13.954] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[10März2026 01:58:13.956] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[10März2026 01:58:13.959] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[10März2026 01:58:13.976] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[10März2026 01:58:13.977] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[10März2026 01:58:13.977] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[10März2026 01:58:13.977] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[10März2026 01:58:13.978] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[10März2026 01:58:14.300] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[10März2026 01:58:14.303] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[10März2026 01:58:14.303] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[10März2026 01:58:29.873] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[10März2026 01:58:33.375] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1407 recipes
-[10März2026 01:58:33.406] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1520 advancements
-[10März2026 01:58:33.730] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.6
-[10März2026 01:58:33.731] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[10März2026 01:58:34.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[10März2026 01:58:35.971] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[10März2026 01:58:35.971] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[10März2026 01:58:35.971] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[10März2026 01:58:36.495] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1565 ms
-[10März2026 01:58:36.496] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[10März2026 01:58:36.832] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 3, from 10
-[10März2026 01:58:36.833] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
-[10März2026 01:58:38.850] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
-[10März2026 01:58:38.999] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:c872f47d] logged in with entity id 98 at (34.41737912687309, 66.0, 34.408204566968564)
-[10März2026 01:58:39.115] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[10März2026 01:58:39.555] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
-[10März2026 01:58:42.621] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
-[10März2026 01:58:45.620] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 20 advancements
-[10März2026 01:58:45.683] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 6734ms or 134 ticks behind
-[10März2026 01:58:45.993] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
-[10März2026 01:58:47.065] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
-[10März2026 01:58:47.382] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
-[10März2026 01:58:49.615] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell out of the world
-[10März2026 01:58:49.678] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell out of the world
-[10März2026 01:58:53.148] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
-[10März2026 01:58:54.700] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
-[10März2026 01:59:29.319] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 30 advancements
-[10März2026 01:59:32.770] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
-[10März2026 01:59:44.310] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 34 advancements
-[10März2026 01:59:51.214] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 36 advancements
-[10März2026 01:59:57.273] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 45 advancements
-[10März2026 01:59:59.265] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 48 advancements
-[10März2026 02:00:03.807] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Respawn point set
-[10März2026 02:00:23.199] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[10März2026 02:00:23.268] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10März2026 02:00:23.362] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10März2026 02:00:23.362] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10März2026 02:00:29.713] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[10März2026 02:00:29.714] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[10März2026 02:00:29.773] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[10März2026 02:00:29.787] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[10März2026 02:00:29.788] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[10März2026 02:00:29.788] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[10März2026 02:00:29.988] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10März2026 02:00:30.790] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10März2026 02:00:30.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10März2026 02:00:30.838] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (2)): All chunks are saved
-[10März2026 02:00:30.840] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[10März2026 02:00:30.840] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[10März2026 02:00:30.840] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[10März2026 02:00:36.162] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1407 recipes
-[10März2026 02:00:36.179] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1520 advancements
-[10März2026 02:00:38.392] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.6
-[10März2026 02:00:38.392] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[10März2026 02:00:38.600] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World (3)\serverconfig\forge-server.toml is not correct. Correcting
-[10März2026 02:00:38.604] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SynchronizedConfig{DataHolder:{}}. 
-[10März2026 02:00:38.605] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
-[10März2026 02:00:38.606] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
-[10März2026 02:00:38.606] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
-[10März2026 02:00:38.607] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
-[10März2026 02:00:38.607] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
-[10März2026 02:00:40.615] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[10März2026 02:00:40.673] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[10März2026 02:00:41.134] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[10März2026 02:00:41.637] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
-[10März2026 02:00:42.134] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
-[10März2026 02:00:42.634] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
-[10März2026 02:00:43.134] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
-[10März2026 02:00:43.615] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[10März2026 02:00:43.621] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 3, from 10
-[10März2026 02:00:43.621] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
-[10März2026 02:00:43.624] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2997 ms
-[10März2026 02:00:43.878] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
-[10März2026 02:00:43.916] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:907427bd] logged in with entity id 1831 at (-69.5, 67.0, 16.5)
-[10März2026 02:00:43.941] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[10März2026 02:00:45.442] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
-[10März2026 02:00:52.828] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
-[10März2026 02:00:57.934] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3 advancements
-[10März2026 02:01:23.681] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 13 advancements
-[10März2026 02:01:28.685] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[10März2026 02:01:28.691] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[10März2026 02:02:04.566] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[10März2026 02:02:04.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10März2026 02:02:04.650] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10März2026 02:02:04.651] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10März2026 02:02:05.032] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[10März2026 02:02:05.032] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[10März2026 02:02:05.076] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[10März2026 02:02:05.093] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[10März2026 02:02:05.094] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[10März2026 02:02:05.094] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[10März2026 02:02:05.272] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10März2026 02:02:06.526] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10März2026 02:02:06.532] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10März2026 02:02:06.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (3)): All chunks are saved
-[10März2026 02:02:06.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[10März2026 02:02:06.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[10März2026 02:02:06.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[10März2026 02:02:08.712] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[11März2026 01:06:29.914] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_client, --version, MOD_DEV, --assetIndex, 27, --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --gameDir, .]
+[11März2026 01:06:29.914] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[11März2026 01:06:29.914] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[11März2026 01:06:30.042] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[11März2026 01:06:30.180] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[11März2026 01:06:30.276] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[11März2026 01:06:30.415] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/snikl/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=CLIENT
+[11März2026 01:06:30.618] [EarlyDisplay/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Graphics GL version 4.6.0 Core Profile Context 25.8.1.250617, ATI Technologies Inc.
+[11März2026 01:06:32.013] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[11März2026 01:06:34.011] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_client' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\snikl\.gradle\caches\forge_gradle\assets, --assetIndex, 27]
+[11März2026 01:06:42.438] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 278 Datafixer optimizations took 701 milliseconds
+[11März2026 01:06:42.557] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[11März2026 01:06:48.265] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:root
+[11März2026 01:06:48.265] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:sound_event
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:fluid
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:particle_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:attribute
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:mob_effect
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:block
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_effect_component_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:entity_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_score_provider_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_number_provider_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:map_decoration_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_pool_entry_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_nbt_provider_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_function_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:data_component_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:item
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:game_event
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:debug_subscription
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:potion
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:block_entity_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:stat_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:custom_stat
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:chunk_status
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:rule_test
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:rule_block_entity_modifier
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:pos_rule_test
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:menu
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:recipe_type
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:recipe_serializer
+[11März2026 01:06:48.267] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:position_source_type
+[11März2026 01:06:48.271] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:command_argument_type
+[11März2026 01:06:48.271] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:villager_type
+[11März2026 01:06:48.271] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:villager_profession
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:point_of_interest_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:memory_module_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:sensor_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:activity
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:schedule
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:loot_condition_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:float_provider_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:int_provider_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:height_provider_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:block_predicate_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/carver
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_processor
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/feature
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_placement
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_piece
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/placement_modifier_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/block_state_provider_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/foliage_placer_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/trunk_placer_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/root_placer_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/tree_decorator_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/feature_size_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/biome_source
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/chunk_generator
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/material_condition
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/material_rule
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/density_function_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:block_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/structure_pool_element
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:worldgen/pool_alias_binding
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:decorated_pot_pattern
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:creative_mode_tab
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:trigger_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:number_format_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:entity_sub_predicate_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:data_component_predicate_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_level_based_value_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_entity_effect_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_location_based_effect_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_value_effect_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:enchantment_provider_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:consume_effect_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:recipe_display
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:slot_display
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:recipe_book_category
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:ticket_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:incoming_rpc_methods
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:outgoing_rpc_methods
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:test_environment_definition_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:test_instance_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:spawn_condition_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:dialog_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:dialog_action_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:input_control_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:dialog_body_type
+[11März2026 01:06:48.272] [pool-5-thread-1/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: 	minecraft:test_function
+[11März2026 01:06:50.230] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.9-59.0.5_mapped_official_1.21.9/forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[11März2026 01:06:50.262] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/snikl/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.9-59.0.5_mapped_official_1.21.9/forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/data/.mcassetsroot' uses unexpected schema
+[11März2026 01:06:50.821] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[11März2026 01:06:51.107] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[11März2026 01:06:53.224] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[11März2026 01:06:56.777] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access
+[11März2026 01:06:56.922] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 59.0.5, for MC 1.21.9 with MCP 20250930.103108
+[11März2026 01:06:56.927] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v59.0.5 Initialized
+[11März2026 01:06:56.946] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[11März2026 01:06:57.852] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[11März2026 01:06:58.200] [Download-1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[11März2026 01:06:58.208] [Download-1/ERROR] [com.mojang.realmsclient.client.RealmsClient/]: Failed to fetch Realms feature flags
+com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: 0'
+	at TRANSFORMER/minecraft@1.21.9/com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:536) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/com.mojang.realmsclient.client.RealmsClient.fetchFeatureFlags(RealmsClient.java:189) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[11März2026 01:06:58.244] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-16.0.03.hex, loading
+[11März2026 01:06:58.244] [Worker-Main-6/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-16.0.03.hex, loading
+[11März2026 01:06:58.244] [Worker-Main-11/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-16.0.03.hex, loading
+[11März2026 01:06:58.465] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[11März2026 01:06:59.423] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: BETA Current: 59.0.5 Target: 59.0.5
+[11März2026 01:07:01.132] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speaker (Realtek(R) Audio)
+[11März2026 01:07:01.134] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[11März2026 01:07:01.136] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[11März2026 01:07:01.144] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[11März2026 01:07:01.145] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[11März2026 01:07:01.150] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[11März2026 01:07:01.150] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[11März2026 01:07:01.151] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[11März2026 01:07:01.161] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/chest.png-atlas
+[11März2026 01:07:01.162] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[11März2026 01:07:01.163] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
+[11März2026 01:07:01.165] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[11März2026 01:07:01.174] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[11März2026 01:07:01.175] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
+[11März2026 01:07:01.175] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[11März2026 01:07:01.688] [IO-Worker-1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[11März2026 01:07:01.689] [IO-Worker-1/ERROR] [com.mojang.realmsclient.RealmsAvailability/]: Couldn't connect to realms
+com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: 0'
+	at TRANSFORMER/minecraft@1.21.9/com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:536) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/com.mojang.realmsclient.client.RealmsClient.clientCompatible(RealmsClient.java:316) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/com.mojang.realmsclient.RealmsAvailability.lambda$check$0(RealmsAvailability.java:49) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[11März2026 01:07:13.022] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Deleting level New World (3)
+[11März2026 01:07:13.022] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Attempt 1...
+[11März2026 01:07:15.294] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Deleting level New World (2)
+[11März2026 01:07:15.294] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Attempt 1...
+[11März2026 01:07:18.961] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Deleting level New World
+[11März2026 01:07:18.961] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Attempt 1...
+[11März2026 01:07:21.469] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Deleting level New World (1)
+[11März2026 01:07:21.470] [Render thread/INFO] [net.minecraft.world.level.storage.LevelStorageSource/]: Attempt 1...
+[11März2026 01:07:21.793] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[11März2026 01:07:25.475] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1461 recipes
+[11März2026 01:07:25.493] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1574 advancements
+[11März2026 01:07:28.318] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.9
+[11März2026 01:07:28.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[11März2026 01:07:28.383] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World\serverconfig\forge-server.toml is not correct. Correcting
+[11März2026 01:07:28.386] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SynchronizedConfig{DataHolder:{}}. 
+[11März2026 01:07:28.386] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
+[11März2026 01:07:28.387] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[11März2026 01:07:28.387] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[11März2026 01:07:28.387] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
+[11März2026 01:07:28.387] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
+[11März2026 01:07:28.772] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Selecting global world spawn...
+[11März2026 01:07:32.125] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 0 persistent chunks...
+[11März2026 01:07:32.126] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:32.130] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[11März2026 01:07:32.665] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 48 chunks for player spawn...
+[11März2026 01:07:32.665] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:32.682] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:32.732] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:32.781] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:32.832] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:32.882] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:32.932] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:32.982] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:33.283] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:33.782] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[11März2026 01:07:34.281] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 30%
+[11März2026 01:07:34.782] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 30%
+[11März2026 01:07:35.281] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 58%
+[11März2026 01:07:35.732] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Time elapsed: 6960 ms
+[11März2026 01:07:35.973] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
+[11März2026 01:07:36.051] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:53d5fe69] logged in with entity id 34 at (-45.5, 71.0, 71.5)
+[11März2026 01:07:36.127] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[11März2026 01:07:36.465] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[11März2026 01:07:39.890] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[11März2026 01:07:41.442] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[11März2026 01:07:41.497] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 3, from 10
+[11März2026 01:07:41.501] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
+[11März2026 01:07:41.528] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 5447ms or 108 ticks behind
+[11März2026 01:07:42.042] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[11März2026 01:07:42.535] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[11März2026 01:07:43.672] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[11März2026 01:07:48.214] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[11März2026 01:08:04.442] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3160ms or 63 ticks behind
+[11März2026 01:08:18.530] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[11März2026 01:08:18.752] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11März2026 01:08:22.069] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11März2026 01:08:22.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11März2026 01:08:22.626] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3194ms or 63 ticks behind
+[11März2026 01:08:35.102] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[11März2026 01:08:35.200] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11März2026 01:08:35.969] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11März2026 01:08:35.972] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11März2026 01:08:53.196] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2064ms or 41 ticks behind
+[11März2026 01:09:16.481] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[11März2026 01:09:16.492] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11März2026 01:09:16.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11März2026 01:09:16.798] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11März2026 01:09:35.836] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2105ms or 42 ticks behind
+[11März2026 01:09:46.323] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[11März2026 01:09:46.332] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11März2026 01:09:46.565] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11März2026 01:09:46.566] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11März2026 01:09:57.617] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 6785ms or 135 ticks behind
+[11März2026 01:10:02.925] [pool-8-thread-1/ERROR] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Error during chunk transformation
+java.lang.NullPointerException: null
+	at java.base/java.util.ArrayDeque.addFirst(ArrayDeque.java:285) ~[?:?]
+	at java.base/java.util.ArrayDeque.push(ArrayDeque.java:578) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.runUpdates(CollectingNeighborUpdater.java:82) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.addAndRun(CollectingNeighborUpdater.java:74) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.updateNeighborsAtExceptFromFacing(CollectingNeighborUpdater.java:56) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1154) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1147) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.markAndNotifyBlock(Level.java:260) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:234) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:207) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformChunkImmediate(ChunkTransformerMod.java:468) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:371) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.lambda$transformChunksInRadius$9(ChunkTransformerMod.java:545) ~[main/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[11März2026 01:10:03.376] [pool-8-thread-1/ERROR] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Error during chunk transformation
+java.lang.NullPointerException: null
+	at java.base/java.util.ArrayDeque.addFirst(ArrayDeque.java:285) ~[?:?]
+	at java.base/java.util.ArrayDeque.push(ArrayDeque.java:578) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.runUpdates(CollectingNeighborUpdater.java:82) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.addAndRun(CollectingNeighborUpdater.java:74) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.updateNeighborsAtExceptFromFacing(CollectingNeighborUpdater.java:56) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1154) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1147) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.markAndNotifyBlock(Level.java:260) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:234) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:207) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformChunkImmediate(ChunkTransformerMod.java:468) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:371) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.lambda$transformChunksInRadius$9(ChunkTransformerMod.java:545) ~[main/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[11März2026 01:10:03.425] [pool-8-thread-2/ERROR] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Error during chunk transformation
+java.lang.NullPointerException: null
+	at java.base/java.util.ArrayDeque.addFirst(ArrayDeque.java:285) ~[?:?]
+	at java.base/java.util.ArrayDeque.push(ArrayDeque.java:578) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.runUpdates(CollectingNeighborUpdater.java:82) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.addAndRun(CollectingNeighborUpdater.java:74) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.updateNeighborsAtExceptFromFacing(CollectingNeighborUpdater.java:56) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1154) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1147) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.markAndNotifyBlock(Level.java:260) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:234) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:207) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformChunkImmediate(ChunkTransformerMod.java:468) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:371) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.lambda$transformChunksInRadius$9(ChunkTransformerMod.java:545) ~[main/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[11März2026 01:10:03.472] [pool-8-thread-1/ERROR] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Error during chunk transformation
+java.lang.NullPointerException: null
+	at java.base/java.util.ArrayDeque.addFirst(ArrayDeque.java:285) ~[?:?]
+	at java.base/java.util.ArrayDeque.push(ArrayDeque.java:578) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.runUpdates(CollectingNeighborUpdater.java:82) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.addAndRun(CollectingNeighborUpdater.java:74) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.updateNeighborsAtExceptFromFacing(CollectingNeighborUpdater.java:56) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1154) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1147) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.markAndNotifyBlock(Level.java:260) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:234) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:207) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformChunkImmediate(ChunkTransformerMod.java:468) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:371) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.lambda$transformChunksInRadius$9(ChunkTransformerMod.java:545) ~[main/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[11März2026 01:10:03.475] [pool-8-thread-1/ERROR] [net.bagaja.chunktransformer.ChunkTransformerMod/]: Error during chunk transformation
+java.lang.NullPointerException: null
+	at java.base/java.util.ArrayDeque.addFirst(ArrayDeque.java:285) ~[?:?]
+	at java.base/java.util.ArrayDeque.push(ArrayDeque.java:578) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.runUpdates(CollectingNeighborUpdater.java:82) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.addAndRun(CollectingNeighborUpdater.java:74) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.redstone.CollectingNeighborUpdater.updateNeighborsAtExceptFromFacing(CollectingNeighborUpdater.java:56) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1154) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.server.level.ServerLevel.updateNeighborsAt(ServerLevel.java:1147) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.markAndNotifyBlock(Level.java:260) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:234) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.9/net.minecraft.world.level.Level.setBlock(Level.java:207) ~[forge-1.21.9-59.0.5_mapped_official_1.21.9.jar%230!/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformChunkImmediate(ChunkTransformerMod.java:468) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.transformSingleChunk(ChunkTransformerMod.java:371) ~[main/:?]
+	at TRANSFORMER/chunktransformer@2.0.5/net.bagaja.chunktransformer.ChunkTransformerMod.lambda$transformChunksInRadius$9(ChunkTransformerMod.java:545) ~[main/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[11März2026 01:10:08.565] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[11März2026 01:10:10.864] [pool-8-thread-2/ERROR] [net.minecraft.world.level.redstone.CollectingNeighborUpdater/]: Too many chained neighbor updates. Skipping the rest. First skipped position: -55, 77, 9
+[11März2026 01:10:18.531] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[11März2026 01:10:18.551] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11März2026 01:10:18.687] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11März2026 01:10:18.688] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11März2026 01:10:29.960] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[11März2026 01:10:29.966] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[11März2026 01:10:57.481] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[11März2026 01:10:57.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11März2026 01:10:57.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11März2026 01:10:57.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11März2026 01:11:23.923] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2491ms or 49 ticks behind
+[11März2026 01:12:02.392] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[11März2026 01:12:02.416] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11März2026 01:12:02.525] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11März2026 01:12:02.526] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11März2026 01:12:19.784] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[11März2026 01:12:19.788] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[11März2026 01:12:19.902] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[11März2026 01:12:20.045] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[11März2026 01:12:20.050] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[11März2026 01:12:20.051] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[11März2026 01:12:20.912] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11März2026 01:12:23.979] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11März2026 01:12:24.010] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11März2026 01:12:24.226] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[11März2026 01:12:24.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11März2026 01:12:24.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11März2026 01:12:24.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[11März2026 01:12:28.714] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

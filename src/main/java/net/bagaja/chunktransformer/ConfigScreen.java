@@ -1,5 +1,6 @@
 package net.bagaja.chunktransformer;
 
+import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.components.Button;
@@ -7,6 +8,7 @@ import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
@@ -332,13 +334,13 @@ public class ConfigScreen extends Screen {
     }
 
     @Override
-    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-        if (keyCode == GLFW.GLFW_KEY_ESCAPE) {
+    public boolean keyPressed(net.minecraft.client.input.KeyEvent event) {
+        if (event.key() == InputConstants.KEY_ESCAPE) {
             assert minecraft != null;
             minecraft.setScreen(lastScreen);
             return true;
         }
-        return super.keyPressed(keyCode, scanCode, modifiers);
+        return super.keyPressed(event);
     }
 
     @Override

@@ -3,6 +3,7 @@ package net.bagaja.chunktransformer;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
@@ -29,6 +30,7 @@ import org.lwjgl.glfw.GLFW;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
+import java.lang.invoke.MethodHandles;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
@@ -40,10 +42,12 @@ public class ChunkTransformerMod {
     public static final String MODID = "chunktransformer";
     public static final org.slf4j.Logger LOGGER = LogUtils.getLogger();
     private static final BlockConfig blockConfig = new BlockConfig();
+    private static final KeyMapping.Category CONFIG_CATEGORY = KeyMapping.Category.MISC; // use vanilla misc
     private static final KeyMapping configKey = new KeyMapping(
             "key.chunktransformer.config",
+            InputConstants.Type.KEYSYM,
             GLFW.GLFW_KEY_K,
-            "key.categories.misc"
+            KeyMapping.Category.MISC
     );
     private static final Random RANDOM = new Random();
     private static final Map<String, Set<Long>> worldTransformedChunks = new ConcurrentHashMap<>();
@@ -238,14 +242,13 @@ public class ChunkTransformerMod {
         loadPerformanceConfig();
         loadChunkSaveConfig();
 
-        // Register each listener directly on its event's bus
+        // Game bus events — use their own static BUS fields
         PlayerEvent.PlayerRespawnEvent.BUS.addListener(this::onPlayerRespawn);
         TickEvent.PlayerTickEvent.Post.BUS.addListener(this::onPlayerTick);
         InputEvent.Key.BUS.addListener(this::onKeyInput);
 
-        // Register key mapping on the mod bus
-        RegisterKeyMappingsEvent.getBus(context.getModBusGroup())
-                .addListener(event -> event.register(configKey));
+        // Mod bus event — needs the BusGroup from context
+        RegisterKeyMappingsEvent.BUS.addListener(event -> event.register(configKey));
 
         startAsyncChunkProcessor();
     }
@@ -260,7 +263,6 @@ public class ChunkTransformerMod {
         }
     }
 
-    @SubscribeEvent
     public void onPlayerRespawn(PlayerEvent.PlayerRespawnEvent event) {
         lastChunkPos = null;
         try {
@@ -272,15 +274,12 @@ public class ChunkTransformerMod {
         }
     }
 
-    @SubscribeEvent
-    public void onPlayerTick(TickEvent.PlayerTickEvent event) {
-        // In 1.21.3, TickEvent.PlayerTickEvent.Phase was moved; use event.phase directly
-        if (event.phase != TickEvent.Phase.END) return;
-        if (event.player == null) return;
-        if (event.player.level().isClientSide()) return;
+    public void onPlayerTick(TickEvent.PlayerTickEvent.Post event) {
+        // No phase check needed — Post only fires post-tick by definition
+        Player player = event.player(); // record accessor method, not a field
+        if (player.level().isClientSide()) return;
 
         try {
-            Player player = event.player;
             ChunkPos currentChunkPos = new ChunkPos(player.blockPosition());
 
             if (currentWorldId == null) {
